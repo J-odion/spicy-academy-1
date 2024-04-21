@@ -2,6 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import { Button } from "@/components/ui/button"
 import { NavigationMenus } from "@/components/parts/Menus";
+import Link from 'next/link';
 
 export default function Headers() {
     return (
@@ -15,7 +16,7 @@ export default function Headers() {
             <NavigationMenus  />
             <div className="bg-none z-99 font-[400] text-[14px] text-white gap-8 flex items-center ">
             <a>Login</a>
-            <Button className="bg-brown h-[35px] w-[auto] rounded-2xl p-[15px] text-[14px] items-center justify-center">Join Now</Button>
+            <Button className="bg-brown h-[35px] w-[auto] rounded-2xl p-[15px] text-[14px] items-center justify-center"><Link href="/dashboard/admin/account">Join Now</Link></Button>
             </div>
         </div>
     )

@@ -22,8 +22,10 @@ const config = {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
+        brown: 'var(--brown)',
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        bgimg: "url('assets/img/bghero.png')",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
