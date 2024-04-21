@@ -47,16 +47,16 @@ const DashboardNav = ({page, toggleSideBar, setToggleSideBar}: Props) => {
 
   return (
     <>
-      <nav className="fixed top-0 z-40 w-full  px-5 py-6 text-black md:px-10 lg:py-4 border-b">
+      <nav className="fixed top-0 lg:pl-80 w-full px-5 py-6 bg-white text-black md:px-10 lg:py-4 border-b">
         <div className="flex items-center justify-between">
 
           <div>
-            <h1 className="text-2xl font-bold">{page}</h1>
+            <h1 className="text-2xl capitalize font-bold">{page}</h1>
           </div>
 
           <div>
             <div className="hidden items-center space-x-20 lg:flex">
-              <div className="inline-flex items-center space-x-4">
+              <div className="inline-flex items-center space-x-1">
                 <Search size="20" />
                 <Input
                   type="text"

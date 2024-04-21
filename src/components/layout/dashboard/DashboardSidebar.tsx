@@ -21,7 +21,8 @@ const DashboardSidebar = ({ children }: DashboardSidebarProps) => {
   return (
     <>
         <aside className='relative'>
-            <div className="lg:flex flex-col h-screen w-64 bg-white shadow-xl hidden">
+            <div className="fixed hidden h-screen w-72 bg-white lg:flex border-r">
+                <div>
                 <div className="flex items-center justify-center h-20">
                     <h1 className="text-2xl font-bold">Admin</h1>
                 </div>
@@ -192,6 +193,15 @@ const DashboardSidebar = ({ children }: DashboardSidebarProps) => {
                         Logout
                     </div>
                 </div>
+                </div>
+
+
+            </div>
+            {/* <div className="h-full min-h-screen w-full pl-5 pr-5 pt-12 py-10 md:pt-12 lg:min-h-40 lg:pl-[32rem] lg:pr-10">
+                {children}
+            </div> */}
+            <div className='h-full min-h-screen w-full pl-5 pr-5 pt-12 py-10 md:pt-10 lg:min-h-40 lg:pl-[19rem] lg:pr-2 pb-20'>
+                {children}
             </div>
         </aside>
     </>
