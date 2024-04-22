@@ -17,7 +17,8 @@ const CoursesCategoryTab = ({currentTab='beginner'}: CategoryCoursesProps) => {
           >
             Beginner
           </li>
-        </Link><Link href="/dashboard/admin/courses/category-courses/amateur">
+        </Link>
+        <Link href="/dashboard/admin/courses/category-courses/amateur">
           <li
             className={`cursor-pointer ${
               currentTab === "amateur" && "border-b-2 border-[#A85334] text-[#A85334] bg-[#FDF4E9] py-2 px-4"
@@ -33,7 +34,8 @@ const CoursesCategoryTab = ({currentTab='beginner'}: CategoryCoursesProps) => {
           >
             Intermediate
           </li>
-        </Link><Link href="/dashboard/admin/courses/category-courses/advanced">
+        </Link>
+        <Link href="/dashboard/admin/courses/category-courses/advanced">
           <li
             className={`cursor-pointer ${
               currentTab === "advanced" && "border-b-2 border-[#A85334] text-[#A85334] bg-[#FDF4E9] py-2 px-4"

@@ -38,6 +38,10 @@ const Courses: NextPageWithLayout = () => {
     setEditModal(!editModal);
   }
 
+  const handleViewCategory = (category: string) => {
+    router.push(`/dashboard/admin/courses/category-courses/${category}`);
+  }
+
   return (
     <DashboardSidebar>
       <div className="w-full md:mt-20">
@@ -59,7 +63,7 @@ const Courses: NextPageWithLayout = () => {
                   <TableCell>{category.no_of_courses}</TableCell>
                   <TableCell>{category.enrolled_students}</TableCell>
                   <TableCell>
-                      <Button variant={'outline'} className='border-[#A85334] border-[1px] text-[#A85334]'>View</Button>
+                      <Button variant={'outline'} className='border-[#A85334] border-[1px] text-[#A85334]' onClick={() => handleViewCategory(category.category.toLowerCase())}>View</Button>
                   </TableCell>
                   <TableCell onClick={handleDeleteModal}><Trash size={20} color='#A85334' className='cursor-pointer' /></TableCell>
                 </TableRow>
