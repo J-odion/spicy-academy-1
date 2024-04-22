@@ -70,7 +70,7 @@ const SubscriptionPlans: NextPageWithLayout = () => {
 
   return (
     <DashboardSidebar>
-      <div className="w-full mt-10 px-8">
+      <div className="w-full pt-10 px-8">
         <h1 className="text-2xl font-semibold py-8">Subscription Plans</h1>
         <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4 mt-5">
         {subscriptionPlans.map((plan) => (

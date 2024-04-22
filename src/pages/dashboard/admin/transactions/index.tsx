@@ -1,6 +1,9 @@
 import React from 'react'
 import DashboardLayout from '@/components/layout/dashboard/DashboardLayout'
 import DashboardSidebar from '@/components/layout/dashboard/DashboardSidebar'
+import TransactionHeaderTab from '@/components/tabs/TransactionHeaderTab'
+
+
 
 const Transactions = () => {
   return (
