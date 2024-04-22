@@ -28,8 +28,12 @@ const Beginner: NextPageWithLayout = () => {
           {categories.map((category) => (
             <div key={category.id} className='flex flex-col gap-2 px-4 rounded-[6px] justify-between py-4 border-[1px] border-[#E5E5E5]'>
               <div className='flex items-center gap-4'>
-                <video className=''>{category.content}</video>
+                <video className='rounded-md' controls>
+                  <source src={category.content} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
               </div>
+
               <h5>{category.title}</h5>
               <div className='text-[#A85334] bg-[#F0EAE8] px-1 text-sm py-2 w-1/2'>{category.name_of_tutor}</div>
               <div className="flex justify-between">
