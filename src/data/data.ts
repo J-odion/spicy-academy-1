@@ -42,6 +42,7 @@ export const transactions = [
   {
     id: 1,
     receiptNo: 'SGA.N4.78782108',
+    email: 'michelle.rivera@example.com',
     plan: '12 month',
     amount: 2000,
     created_at: '2021-09-12',
@@ -69,7 +70,7 @@ export const transactions = [
     plan: '12 month',
     amount: 2000,
     created_at: '2021-09-12',
-    status: 'Success'
+    status: 'Recieved'
   },
   {
     id: 5,
@@ -77,7 +78,7 @@ export const transactions = [
     plan: '12 month',
     amount: 2000,
     created_at: '2021-09-12',
-    status: 'Success'
+    status: 'Recieved'
   },
   {
     id: 6,
@@ -85,7 +86,7 @@ export const transactions = [
     plan: '12 month',
     amount: 2000,
     created_at: '2021-09-12',
-    status: 'Success'
+    status: 'Recieved'
   },
   {
     id: 7,
@@ -93,7 +94,7 @@ export const transactions = [
     plan: '12 month',
     amount: 2000,
     created_at: '2021-09-12',
-    status: 'Success'
+    status: 'Received'
   },
   {
     id: 8,
@@ -101,7 +102,7 @@ export const transactions = [
     plan: '12 month',
     amount: 2000,
     created_at: '2021-09-12',
-    status: 'Success'
+    status: 'Pending'
   },
   {
     id: 9,
@@ -109,7 +110,7 @@ export const transactions = [
     plan: '12 month',
     amount: 2000,
     created_at: '2021-09-12',
-    status: 'Success'
+    status: 'Pending'
   }
 ]
 

@@ -50,20 +50,14 @@ const DashboardLayout = ({ children, page, }: DashboardLayoutProps) => {
 
   return (
     <>
-      <div className="flex h-screen">
+      <div className="relative">
         <DashboardNav
           page={page}
           toggleSideBar={toggleSideBar}
           setToggleSideBar={setToggleSideBar}
          />
-        {/* <main className="absolute top-0 left-64 w-full h-full bg-gray-100 p-8"> */}
           {children}
-        {/* </main> */}
       </div>
-      {/* <div className="flex h-screen">
-        <DashboardNav page={page} />
-        <main className="flex-grow bg-gray-100 p-8">{children}</main>
-      </div> */}
     </>
   )
 }

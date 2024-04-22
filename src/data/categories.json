@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "category": "Beginner",
+        "no_of_courses": 20,
+        "enrolled_students": 10
+    },
+    {
+        "id": 2,
+        "category": "Amateur",
+        "no_of_courses": 20,
+        "enrolled_students": 20
+    },
+    {
+        "id": 3,
+        "category": "Intermediate",
+        "no_of_courses": 20,
+        "enrolled_students": 30
+    },
+    {
+        "id": 4,
+        "category": "Advanced",
+        "no_of_courses": 20,
+        "enrolled_students": 40
+    }
+]
