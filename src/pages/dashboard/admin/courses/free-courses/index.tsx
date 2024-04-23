@@ -4,8 +4,13 @@ import DashboardSidebar from '@/components/layout/dashboard/DashboardSidebar';
 import DashboardLayout from '@/components/layout/dashboard/DashboardLayout';
 import CoursesHeaderTab from '@/components/tabs/CoursesHeaderTab';
 import freecourses from '@/data/freeCourses.json';
-import { EllipsisVertical } from 'lucide-react';
+import { EllipsisVertical, Plus } from 'lucide-react';
 import EditModal from '@/components/modal/courses/free-courses/EditModal';
+import AddModal from '@/components/modal/courses/free-courses/AddModal';
+import DeleteModal from '@/components/modal/courses/DeleteModal';
+import { Button } from '@/components/ui/button';
+import { Checkbox } from "@/components/ui/checkbox"
+
 
 const FreeCourses: NextPageWithLayout = () => {
   const [menuOpen, setMenuOpen] = useState<string | null>(null);
@@ -15,13 +20,22 @@ const FreeCourses: NextPageWithLayout = () => {
   };
 
   const [editModal, setEditModal] = useState<boolean>(false);
+  const [addModal, setAddModal] = useState<boolean>(false);
+  const [deleteModal, setDeleteModal] = useState<boolean>(false);
 
-    const handleEditModal = () => setEditModal(!editModal);
+  const handleEditModal = () => setEditModal(!editModal);
+  const handleAddModal = () => setAddModal(!addModal);
+  const handleDeleteModal = () => setDeleteModal(!deleteModal);
 
   return (
     <DashboardSidebar>
       <div className="w-full md:mt-20">
+        <div className="flex justify-end items-center gap-4">
+          <div><Checkbox /> Select</div>
+          <Button className='inline-flex items-center gap-2 bg-[#A85334]' onClick={handleAddModal}><Plus size={18} />Add Course</Button>
+          </div>
         <CoursesHeaderTab currentTab={'free-courses'} />
+
         <div className='grid grid-cols-4 gap-8'>
           {freecourses.map((course) => (
             <div key={course.id} className='flex flex-col gap-2 rounded-[6px] justify-between py-4 relative'>
@@ -38,7 +52,7 @@ const FreeCourses: NextPageWithLayout = () => {
                   {menuOpen === course.id.toString() && (
                     <div className="absolute right-0 top-full bg-white border border-gray-200 shadow-md rounded-md mt-2 py-1 w-32">
                       <button className="block w-full text-left px-4 py-2 hover:bg-gray-100" onClick={handleEditModal}>Edit</button>
-                      <button className="block w-full text-left px-4 py-2 hover:bg-gray-100">Delete</button>
+                      <button className="block w-full text-left px-4 py-2 hover:bg-gray-100" onClick={handleDeleteModal}>Delete</button>
                     </div>
                   )}
                 </div>
@@ -49,13 +63,24 @@ const FreeCourses: NextPageWithLayout = () => {
               </div>
             </div>
           ))}
-        </div>
+        A</div>
       </div>
       <EditModal
         title='Edit Course'
         open={editModal}
         setOpen={setEditModal}
        />
+       <AddModal
+       title='Add course'
+       open={addModal}
+       setOpen={setAddModal}
+      />
+      <DeleteModal
+       title='Delete course'
+       message='This action can not be reversed'
+       open={deleteModal}
+       setOpen={setDeleteModal}
+      />
     </DashboardSidebar>
   );
 };

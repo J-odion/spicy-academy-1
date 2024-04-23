@@ -22,7 +22,7 @@ type FreeCoursesModalProps = {
   setOpen: (open: boolean) => void;
 };
 
-const EditModal = ({
+const AddModal = ({
   title,
   open,
   setOpen,
@@ -185,7 +185,7 @@ const EditModal = ({
                     Previous
                     </CustomButton>
                     <CustomButton className="bg-[#A85334] w-full" type="submit">
-                    Save Changes
+                    Save
                     </CustomButton>
                 </div>
                 )}
@@ -198,4 +198,4 @@ const EditModal = ({
   );
 };
 
-export default EditModal;
+export default AddModal;
