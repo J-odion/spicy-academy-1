@@ -5,6 +5,7 @@ import DashboardLayout from '@/components/layout/dashboard/DashboardLayout';
 import CoursesHeaderTab from '@/components/tabs/CoursesHeaderTab';
 import freecourses from '@/data/freeCourses.json';
 import { EllipsisVertical } from 'lucide-react';
+import EditModal from '@/components/modal/courses/free-courses/EditModal';
 
 const FreeCourses: NextPageWithLayout = () => {
   const [menuOpen, setMenuOpen] = useState<string | null>(null);
@@ -12,6 +13,10 @@ const FreeCourses: NextPageWithLayout = () => {
   const handleMenuClick = (courseId: string) => {
     setMenuOpen(courseId === menuOpen ? null : courseId);
   };
+
+  const [editModal, setEditModal] = useState<boolean>(false);
+
+    const handleEditModal = () => setEditModal(!editModal);
 
   return (
     <DashboardSidebar>
@@ -32,7 +37,7 @@ const FreeCourses: NextPageWithLayout = () => {
                   <EllipsisVertical size={18} className='text-[#E89222] cursor-pointer' onClick={() => handleMenuClick(course.id.toString())} />
                   {menuOpen === course.id.toString() && (
                     <div className="absolute right-0 top-full bg-white border border-gray-200 shadow-md rounded-md mt-2 py-1 w-32">
-                      <button className="block w-full text-left px-4 py-2 hover:bg-gray-100">Edit</button>
+                      <button className="block w-full text-left px-4 py-2 hover:bg-gray-100" onClick={handleEditModal}>Edit</button>
                       <button className="block w-full text-left px-4 py-2 hover:bg-gray-100">Delete</button>
                     </div>
                   )}
@@ -46,6 +51,11 @@ const FreeCourses: NextPageWithLayout = () => {
           ))}
         </div>
       </div>
+      <EditModal
+        title='Edit Course'
+        open={editModal}
+        setOpen={setEditModal}
+       />
     </DashboardSidebar>
   );
 };
