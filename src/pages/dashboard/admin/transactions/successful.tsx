@@ -10,17 +10,19 @@ import Datapagination from '@/components/pagination/Data-Pagination';
 
 const itemsPerPage = 5;
 
-const Transactions = () => {
+const Successful = () => {
   const [currentPage, setCurrentPage] = useState(1);
+
+  const successfulTransactions = transactions.filter(transaction => transaction.status === 'received');
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = transactions.slice(indexOfFirstItem, indexOfLastItem);
+  const currentItems = successfulTransactions.slice(indexOfFirstItem, indexOfLastItem);
 
   return (
     <DashboardSidebar>
       <div className="w-full mt-10 px-8">
-        <TransactionHeaderTab currentTab={'all'} />
+        <TransactionHeaderTab currentTab={'successful'} />
         <div className="py-5 w-full">
           <Table className='w-full'>
             <TableHeader>
@@ -80,8 +82,8 @@ const Transactions = () => {
   );
 }
 
-export default Transactions;
+export default Successful;
 
-Transactions.getLayout = function getLayout(page: React.ReactElement) {
+Successful.getLayout = function getLayout(page: React.ReactElement) {
   return <DashboardLayout page={"transactions"} >{page}</DashboardLayout>;
 };
