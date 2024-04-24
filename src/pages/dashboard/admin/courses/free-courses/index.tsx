@@ -9,11 +9,14 @@ import EditModal from '@/components/modal/courses/free-courses/EditModal';
 import AddModal from '@/components/modal/courses/free-courses/AddModal';
 import DeleteModal from '@/components/modal/courses/DeleteModal';
 import { Button } from '@/components/ui/button';
-import { Checkbox } from "@/components/ui/checkbox"
+import { Checkbox } from "@/components/ui/checkbox";
+import Datapagination from '@/components/pagination/Data-Pagination';
 
+const itemsPerPage = 8; // Change this value based on the number of items you want to show per page
 
 const FreeCourses: NextPageWithLayout = () => {
   const [menuOpen, setMenuOpen] = useState<string | null>(null);
+  const [currentPage, setCurrentPage] = useState(1);
 
   const handleMenuClick = (courseId: string) => {
     setMenuOpen(courseId === menuOpen ? null : courseId);
@@ -27,17 +30,20 @@ const FreeCourses: NextPageWithLayout = () => {
   const handleAddModal = () => setAddModal(!addModal);
   const handleDeleteModal = () => setDeleteModal(!deleteModal);
 
+  const indexOfLastItem = currentPage * itemsPerPage;
+  const indexOfFirstItem = indexOfLastItem - itemsPerPage;
+  const currentItems = freecourses.slice(indexOfFirstItem, indexOfLastItem);
+
   return (
     <DashboardSidebar>
       <div className="w-full md:mt-20">
         <div className="flex justify-end items-center gap-4">
           <div><Checkbox /> Select</div>
           <Button className='inline-flex items-center gap-2 bg-[#A85334]' onClick={handleAddModal}><Plus size={18} />Add Course</Button>
-          </div>
+        </div>
         <CoursesHeaderTab currentTab={'free-courses'} />
-
         <div className='grid grid-cols-4 gap-8'>
-          {freecourses.map((course) => (
+          {currentItems.map((course) => (
             <div key={course.id} className='flex flex-col gap-2 rounded-[6px] justify-between py-4 relative'>
               <div className='flex items-center gap-4'>
                 <video className='rounded-md' controls>
@@ -63,7 +69,13 @@ const FreeCourses: NextPageWithLayout = () => {
               </div>
             </div>
           ))}
-        A</div>
+        </div>
+        <Datapagination
+          totalItems={freecourses.length}
+          itemsPerPage={itemsPerPage}
+          currentPage={currentPage}
+          onPageChange={setCurrentPage}
+        />
       </div>
       <EditModal
         title='Edit Course'
