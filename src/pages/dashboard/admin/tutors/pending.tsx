@@ -9,12 +9,14 @@ import tutors from '@/data/tutors.json'
 import { Table, TableHeader, TableHead, TableBody, TableCell, TableRow } from "@/components/ui/table";
 import Moment from 'react-moment';
 import Datapagination from '@/components/pagination/Data-Pagination';
+import AddModal from '@/components/modal/tutors/AddModal'
 
 
 const itemsPerPage = 5;
 
 const Pending: NextPageWithLayout = () => {
   const [currentPage, setCurrentPage] = useState(1);
+  const [addModal, setAddModal] = useState<boolean>(false);
 
   const acceptedTutors = tutors.filter(tutor => tutor.status === 'pending');
 
@@ -22,16 +24,18 @@ const Pending: NextPageWithLayout = () => {
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
   const currentItems = acceptedTutors.slice(indexOfFirstItem, indexOfLastItem);
 
+  const handleAddModal = () => setAddModal(!addModal);
+
   const getButtonBorderColor = (status: string) => {
-    return status === 'accepted' ? 'border-red-500' : 'border-green-500';
+    return status === 'accepted' ? 'border-red-500 text-red-500' : 'border-green-500 text-green-500';
   };
 
   return (
     <DashboardSidebar>
       <div className="w-full md:mt-20">
         <div className='flex justify-between'>
-          <div><h1>Tutors</h1></div>
-          <Button className='bg-[#A85334]  gap-2'><Plus size={18} />Add Course</Button>
+          <div><h1 className='text-2xl font-medium'>Tutors</h1></div>
+          <Button className='bg-[#A85334]  gap-2' onClick={handleAddModal}><Plus size={18} />Add new tutor</Button>
         </div>
         <TutorsHeaderTab currentTab="pending" />
         <div className="py-5 w-full">
@@ -64,14 +68,19 @@ const Pending: NextPageWithLayout = () => {
               ))}
             </TableBody>
           </Table>
-          <Datapagination
-            totalItems={tutors.length}
-            itemsPerPage={itemsPerPage}
-            currentPage={currentPage}
-            onPageChange={setCurrentPage}
-          />
         </div>
       </div>
+      <Datapagination
+        totalItems={tutors.length}
+        itemsPerPage={itemsPerPage}
+        currentPage={currentPage}
+        onPageChange={setCurrentPage}
+      />
+      <AddModal
+       title="Add Tutor"
+       open={addModal}
+       setOpen={setAddModal}
+      />
     </DashboardSidebar>
   )
 }
