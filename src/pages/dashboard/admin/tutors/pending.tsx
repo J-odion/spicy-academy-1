@@ -13,10 +13,10 @@ import Datapagination from '@/components/pagination/Data-Pagination';
 
 const itemsPerPage = 5;
 
-const Tutors: NextPageWithLayout = () => {
+const Pending: NextPageWithLayout = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
-  const acceptedTutors = tutors.filter(tutor => tutor.status === 'accepted');
+  const acceptedTutors = tutors.filter(tutor => tutor.status === 'pending');
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
@@ -33,7 +33,7 @@ const Tutors: NextPageWithLayout = () => {
           <div><h1>Tutors</h1></div>
           <Button className='bg-[#A85334]  gap-2'><Plus size={18} />Add Course</Button>
         </div>
-        <TutorsHeaderTab currentTab="accepted" />
+        <TutorsHeaderTab currentTab="pending" />
         <div className="py-5 w-full">
           <Table className='w-full'>
             <TableHeader>
@@ -76,8 +76,8 @@ const Tutors: NextPageWithLayout = () => {
   )
 }
 
-export default Tutors
+export default Pending
 
-Tutors.getLayout = function getLayout(page: React.ReactElement) {
+Pending.getLayout = function getLayout(page: React.ReactElement) {
   return <DashboardLayout page={"tutors"} >{page}</DashboardLayout>;
 };

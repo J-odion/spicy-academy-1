@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import DashboardLayout from '@/components/layout/dashboard/DashboardLayout';
+import { NextPageWithLayout } from '@/pages/_app';
 import DashboardSidebar from '@/components/layout/dashboard/DashboardSidebar';
 import TransactionHeaderTab from '@/components/tabs/TransactionHeaderTab';
 import { Table, TableHeader, TableHead, TableBody, TableCell, TableRow } from "@/components/ui/table";
@@ -10,7 +11,7 @@ import Datapagination from '@/components/pagination/Data-Pagination';
 
 const itemsPerPage = 5;
 
-const Transactions = () => {
+const Transactions: NextPageWithLayout = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   const indexOfLastItem = currentPage * itemsPerPage;

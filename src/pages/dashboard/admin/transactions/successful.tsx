@@ -7,10 +7,11 @@ import Moment from 'react-moment';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import transactions from '@/data/transactions.json';
 import Datapagination from '@/components/pagination/Data-Pagination';
+import { NextPageWithLayout } from '@/pages/_app';
 
 const itemsPerPage = 5;
 
-const Successful = () => {
+const Successful: NextPageWithLayout = () => {
   const [currentPage, setCurrentPage] = useState(1);
 
   const successfulTransactions = transactions.filter(transaction => transaction.status === 'received');
