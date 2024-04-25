@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import { NextPageWithLayout } from '@/pages/_app'
 import DashboardSidebar from '@/components/layout/dashboard/DashboardSidebar'
 import DashboardLayout from '@/components/layout/dashboard/DashboardLayout'
@@ -9,29 +9,23 @@ import { Button } from '@/components/ui/button'
 import Moment from 'react-moment'
 import ViewModal from '@/components/modal/support/ViewModal'
 
-const Support: NextPageWithLayout = () => {
+const Unresolved: NextPageWithLayout = () => {
+
   const [viewSupport, setViewSupport] = useState(false);
   const [selectedSupport, setSelectedSupport] = useState<any>(null);
-
-  const getBackgroundColor = (status: string) => {
-    const resolvedColor = 'bg-[#C6E8B3] text-[#5E8D44]';
-    const unresolvedColor = 'bg-[#F2CDCD] text-[#BF0E0E]';
-    return status === 'resolved' ? resolvedColor : unresolvedColor;
-  };
 
 
   const handleViewSupport = (support: any) => {
     setSelectedSupport(support);
     setViewSupport(true);
   }
-
   return (
     <DashboardSidebar>
       <div className="w-full md:mt-20">
-        <div><h1 className='text-2xl font-medium'>Support</h1></div>
-        <SupportsHeaderTab currentTab="all" />
+          <div className='py-4'><h1 className='text-2xl font-medium'>Support / Unresolved</h1></div>
+        <SupportsHeaderTab currentTab="resolved" />
         <div className="py-5 w-full">
-          <Table className='w-full'>
+        <Table className='w-full'>
             <TableHeader>
               <TableRow>
                 <TableHead>Date</TableHead>
@@ -40,7 +34,7 @@ const Support: NextPageWithLayout = () => {
               </TableRow>
             </TableHeader>
             <TableBody>
-              {supports.map((support) => (
+              {supports.filter((support) => support.status === 'unresolved').map((support) => (
                 <TableRow key={support.id}>
                   <TableCell className='text-[#4F4F4F]'>
                     <Moment format="DD/M/YY">
@@ -49,13 +43,11 @@ const Support: NextPageWithLayout = () => {
                   </TableCell>
                   <TableCell className='text-[#4F4F4F]'>{support.email}</TableCell>
                   <TableCell>
-                    <div className={`rounded-[6px] capitalize text-center flex justify-center items-center w-1/2 h-[2.5em] ${getBackgroundColor(support.status)}`}>
+                    <div className={`rounded-[6px] capitalize text-center flex justify-center items-center w-1/2 h-[2.5em] bg-[#F2CDCD] text-[#BF0E0E]`}>
                       {support.status}
                     </div>
                   </TableCell>
-                  <TableCell>
-                    <Button variant={'outline'} className='border-[1px] border-[#A85334] text-[#A85334] w-full' onClick={() => handleViewSupport(support)}>View</Button>
-                  </TableCell>
+                  <TableCell><Button variant={'outline'} className='border-[1px] border-[#A85334] text-[#A85334] w-full' onClick={() => handleViewSupport(support)}>View</Button></TableCell>
                 </TableRow>
               ))}
             </TableBody>
@@ -67,8 +59,8 @@ const Support: NextPageWithLayout = () => {
   )
 }
 
-export default Support
+export default Unresolved
 
-Support.getLayout = function getLayout(page: React.ReactElement) {
+Unresolved.getLayout = function getLayout(page: React.ReactElement) {
   return <DashboardLayout page={"support"} >{page}</DashboardLayout>;
 };

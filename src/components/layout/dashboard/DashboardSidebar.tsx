@@ -159,7 +159,7 @@ const DashboardSidebar = ({ children }: DashboardSidebarProps) => {
                                 <span className="mr-3">
                                     <MessageCircle size="20" />
                                 </span>
-                                Subscription Plans
+                                Chat Forum
                                 </div>
                             </li>
                         </Link>
@@ -176,7 +176,7 @@ const DashboardSidebar = ({ children }: DashboardSidebarProps) => {
                                 <span className="mr-3">
                                     <UserCircle size="20" />
                                 </span>
-                                Chat Forum
+                                Support
                                 </div>
                             </li>
                         </Link>
