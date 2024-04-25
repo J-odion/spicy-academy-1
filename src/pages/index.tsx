@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import { Button } from "@/components/ui/button";
@@ -5,6 +6,7 @@ import { NavigationMenus } from "@/components/parts/Menus";
 import Headers from "@/components/parts/Headers";
 import { SPGCarousel } from "@/components/parts/Carousel";
 import { FaYoutube } from "react-icons/fa";
+import Footer from "@/components/parts/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -114,7 +116,6 @@ export default function Home() {
                   alt="Picture of the author"
                 />
                 <p className="text-[#2B1108] font-bold text-[12px] text-center">
-                  {" "}
                   Learn At Your <br />
                   Convinience And Pace.
                 </p>
@@ -163,12 +164,98 @@ export default function Home() {
             </div>
           </div>
         </div>
-
       </section>
 
+      <section className="flex bg-[#F0EAE8] my-[30px] p-20 flex-col w-full items-center justify-center gap-12 align-middle h-[100%]">
+        <div className="flex flex-col items-center justify-center gap-10">
+          <h2 className="text-black text-bold mb-10 text-center text-2xl font-bold tracking-wide leading-6 lg:text-3xl">
+            OVERCOME YOUR
+            <span className="bg-[#2B1108] text-white px-3 py-2 rounded-2xl">
+              GUITAR STRUGGLES
+            </span>
+          </h2>
 
+          <div className="flex justify-between">
+            <div className="w-[45%]">
+              <p className=" text-2xl text-bolder ">
+                You're <span className="text-[#F7B500]"> never alone </span>on
+                your<br/>  guitar journey. Our dedicated <br/>  team of instructors is on<br/> 
+                standby to help you overcome<br/>  trouble spots.
+              </p>
+            </div>
+            <div className="w-[45%]">
+              <Image
+                className=" flex-1 h-full w-[80%] "
+                src="/struggles.svg"
+                width={500}
+                height={100}
+                alt="your guitar struggles"
+              />
+            </div>
+          </div>
+          <Button className="bg-brown h-[35px] w-[auto] rounded-2xl p-[15px] text-[14px] items-center justify-center">
+            Join Spicy Guitar Academy for FREE
+          </Button>
+        </div>
+      </section>
 
+      <section className="flex my-[30px] p-20 flex-col w-full items-center justify-center gap-12 align-middle h-[100%]">
+        <div className="w-[80%]">
+          <h2 className="text-black text-bold mb-10 text-center text-2xl font-bold tracking-wide leading-6 lg:text-3xl">
+          <span className="mr-5 ">Lessons For</span>
+            <span className="bg-[#2B1108] text-white px-3 py-2 rounded-2xl">
+            All Skill Levels
+            </span>
+          </h2>
+          <div className="flex justify-between w-full ">
+            <div className="bg-[#7A402C] flex flex-col items-right p-4 text-white justify-center  w-[240px] h-[140px]">
+              <p>Level</p>
+              <h4>BEGINNER</h4>
+            </div>
+            <div className="bg-[#744911] flex flex-col items-right p-4 text-white justify-center  w-[240px] h-[140px]">
+              <p>Level</p>
+              <h4>AMATEUR</h4>
+            </div>
+            <div className="bg-[#4B1E0E] flex flex-col items-right p-4 text-white justify-center  w-[240px] h-[140px]">
+              <p>Level</p>
+              <h4>INTERMIDIATE</h4>
+            </div>
+            <div className="bg-[#200D06] flex flex-col items-right p-4 text-white justify-center  w-[240px] h-[140px]">
+              <p>Level</p>
+              <h4>ADVANCED</h4>
+            </div>
+          </div>
+        </div>
+      </section>
 
+      <section className="flex bg-[#F0EAE8] my-[30px] p-20 flex-col w-full items-center justify-center gap-12 align-middle h-[100%]">
+        <div>
+          <h2 className="text-black text-bold text-center text-2xl font-bold tracking-wide leading-6 lg:text-3xl">
+            Students success stories
+          </h2>
+          <div>
+            <Image
+              className=" flex-1 h-[60px] w-[auto] "
+              src="/struggles.svg"
+              width={500}
+              height={100}
+              alt="your guitar struggles"
+            />
+            <div>
+              <h3>Ifiok Isaiah</h3>
+              <p>
+                Spicy Guitar Academy Is A Great Learning Hub For Any Guitarist
+                That Want To Get On Top Of His/Her Craft. Whether You're A
+                Beginner, Amateur Or Advance Guitar Player, The Academy Will
+                Teach You To Grow From Any Of These Categories To A More
+                Advanced Level.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <Footer />
     </main>
   );
 }
