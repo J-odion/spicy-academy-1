@@ -1,18 +1,9 @@
-import React, { useState } from 'react'
-import DashboardSidebar from '@/components/layout/dashboard/DashboardSidebar'
+import React from 'react'
 
-const Admin = () => {
-
+const index = () => {
   return (
-    <DashboardSidebar>
-      <div className="w-full md:mt-20">
-     
-        <h1>admin</h1>
-      </div>
-      
-    </DashboardSidebar>
+    <div>index</div>
   )
 }
 
-export default Admin
-
+export default index
