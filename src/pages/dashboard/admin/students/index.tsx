@@ -99,7 +99,7 @@ const Students: NextPageWithLayout = () => {
                   <div className="font-medium text-[32px]">{plan.price}</div>
                 </div>
                 <div className="absolute right-0 h-[152px]">
-                    <img src='/images/blob.svg' alt="dashboard"  className=' overflow-hidden h-full w-[265px]' />
+                    <Image src='/images/blob.svg' alt="dashboard" width={265} height={152} className=' overflow-hidden h-full w-[265px]' />
                   </div>
 
               </div>
