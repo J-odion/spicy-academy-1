@@ -12,7 +12,7 @@ import Datapagination from '@/components/pagination/Data-Pagination';
 
 const itemsPerPage = 8;
 
-const Assignments: NextPageWithLayout = () => {
+const Pending: NextPageWithLayout = () => {
 
   const [currentPage, setCurrentPage] = useState(1);
 
@@ -38,7 +38,7 @@ const Assignments: NextPageWithLayout = () => {
     <DashboardSidebar>
       <div className="w-full md:mt-20">
         <div><h1 className='text-2xl font-medium'>Assignments</h1></div>
-        <AssignmentsHeaderTab currentTab="received" />
+        <AssignmentsHeaderTab currentTab="pending" />
         <div className="py-4 w-full">
           <Table className='w-full'>
             <TableHeader>
@@ -52,7 +52,7 @@ const Assignments: NextPageWithLayout = () => {
               </TableRow>
             </TableHeader>
             <TableBody>
-              {currentItems.filter((assignment) => assignment.status === 'reviewed').map((assignment) => (
+              {currentItems.filter((assignment) => assignment.status === 'pending').map((assignment) => (
                 <TableRow key={assignment.id}>
                   <TableCell className='text-[#4F4F4F]'>
                     <Moment format="D/M/YY">
@@ -63,11 +63,6 @@ const Assignments: NextPageWithLayout = () => {
                   <TableCell>{assignment.email}</TableCell>
                   <TableCell>{assignment.level}</TableCell>
                   <TableCell>{assignment.lesson}</TableCell>
-                  <TableCell>
-                    <div className={`rounded-[6px] capitalize text-center flex justify-center items-center p-[13px] h-[2.5em] ${getBackgroundColor(assignment.grade)}`}>
-                      {assignment.grade}%
-                    </div>
-                  </TableCell>
                   <TableCell>
                     <Button variant={'outline'} className='border-[1px] border-[#A85334] text-[#A85334]'>
                       {assignment.status === 'reviewed' ? 'View Remark' : 'Grade'}
@@ -89,8 +84,8 @@ const Assignments: NextPageWithLayout = () => {
   );
 };
 
-export default Assignments;
+export default Pending;
 
-Assignments.getLayout = function getLayout(page: React.ReactElement) {
+Pending.getLayout = function getLayout(page: React.ReactElement) {
   return <DashboardLayout page={"assignments"} >{page}</DashboardLayout>;
 };
