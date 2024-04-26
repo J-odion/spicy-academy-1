@@ -25,7 +25,7 @@ const categoryCourses = () => {
   console.log(categories.map((category) => category.id));
   return (
     <div>
-
+      <h1>hi</h1>
     </div>
   )
 }
