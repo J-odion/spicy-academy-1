@@ -23,15 +23,15 @@ const Pending: NextPageWithLayout = () => {
   const currentItems = assignments.slice(indexOfFirstItem, indexOfLastItem);
 
 
-  const getBackgroundColor = (grade: number) => {
-    if (grade >= 80 && grade <= 100) {
-      return 'bg-[#D6F3C5] ';
-    } else if (grade >= 60 && grade <= 79) {
-      return 'bg-orange-200';
-    } else {
-      return 'bg-red-200';
-    }
-  };
+  // const getBackgroundColor = (grade: number) => {
+  //   if (grade >= 80 && grade <= 100) {
+  //     return 'bg-[#D6F3C5] ';
+  //   } else if (grade >= 60 && grade <= 79) {
+  //     return 'bg-orange-200';
+  //   } else {
+  //     return 'bg-red-200';
+  //   }
+  // };
 
 
   return (

@@ -5,6 +5,7 @@ import { Search, X, AlignJustify, PieChart, BookOpen, BookText, ShoppingBag, Use
 import NotificationModal from './NotificationModal'
 import { Skeleton } from '@/components/ui/skeleton'
 import Link from 'next/link'
+import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
 
 
 const notifications = {
@@ -47,60 +48,35 @@ const DashboardNav = ({page, toggleSideBar, setToggleSideBar}: Props) => {
 
   return (
     <>
-      <nav className="fixed top-0 z-40 lg:pl-80 w-full px-5 py-6 bg-white text-black md:px-10 lg:py-4 border-b">
+      <nav className="fixed top-0 z-40 lg:ml-72 w-full px-5 py-6 bg-white text-black md:px-10 lg:py-4 border-b">
         <div className="flex items-center justify-between">
-
           <div>
             <h1 className="text-2xl capitalize font-bold">{page}</h1>
           </div>
-
-          <div>
-            <div className="hidden items-center space-x-20 lg:flex">
-              <div className="inline-flex items-center space-x-1">
-                <Search size="20" />
-                <Input
-                  type="text"
-                  placeholder="Search"
-                  className="w-96"
-                />
-              </div>
-
-              <NotificationModal
-                notifications={notifications}
-                notificationRefetch={() => {}}
-               />
-            </div>
-          </div>
-        </div>
-
-        <div className="flex cursor-pointer items-center lg:hidden">
-          <div>
+          <div className="flex items-center space-x-4">
+            <div className="hidden lg:flex">
               <Search size="20" />
               <Input
                 type="text"
                 placeholder="Search"
                 className="w-96"
               />
-          </div>
-          <div className="ml-4">
+            </div>
             <NotificationModal
               notifications={notifications}
               notificationRefetch={() => {}}
             />
+            <div className="cursor-pointer lg:hidden" onClick={handleToggleSidebar}>
+              {toggleSideBar ? <X /> : <AlignJustify />}
+            </div>
           </div>
-
-          <div onClick={handleToggleSidebar}>
-                {toggleSideBar ? (
-                  <span>
-                    <X />
-                  </span>
-                ) : (
-                  <span>
-                    <AlignJustify />
-                  </span>
-                )}
-              </div>
         </div>
+        {/* <div className="flex lg:hidden justify-between items-center">
+          <h1 className="text-2xl capitalize font-bold">{page}</h1>
+          <div className="cursor-pointer" onClick={handleToggleSidebar}>
+            {toggleSideBar ? <X /> : <AlignJustify />}
+          </div>
+        </div> */}
       </nav>
 
       {/* Mobile sidebar */}
@@ -108,8 +84,15 @@ const DashboardNav = ({page, toggleSideBar, setToggleSideBar}: Props) => {
         className={`transition-width fixed z-40 flex h-screen bg-[#fff] shadow-lg duration-300 ease-in-out lg:hidden`}
       >
         {toggleSideBar && (
-          <>
-            <ul className="w-60 pt-20 text-[#959190]">
+          <div className='flex flex-col pt-4 '>
+            <div className="flex items-center gap-3 justify-center h-20">
+              <Avatar>
+                <AvatarImage src="https://github.com/shadcn.png" alt="avatar" />
+                <AvatarFallback>CN</AvatarFallback>
+              </Avatar>
+              <h1 className="text-2xl font-bold">Admin</h1>
+            </div>
+            <ul className="w-60 pt-10 text-[#959190]">
               <Link href="/dashboard/admin/account">
                 <li
                   className={
@@ -284,7 +267,7 @@ const DashboardNav = ({page, toggleSideBar, setToggleSideBar}: Props) => {
                   logout
                 </div>
               </div>
-          </>
+          </div>
         )}
       </aside>
     </>
