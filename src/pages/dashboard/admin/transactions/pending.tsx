@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import DashboardLayout from '@/components/layout/dashboard/DashboardLayout';
-import { NextPageWithLayout } from '@/pages/_app';
 import DashboardSidebar from '@/components/layout/dashboard/DashboardSidebar';
 import TransactionHeaderTab from '@/components/tabs/TransactionHeaderTab';
 import { Table, TableHeader, TableHead, TableBody, TableCell, TableRow } from "@/components/ui/table";
@@ -11,17 +10,19 @@ import Datapagination from '@/components/pagination/Data-Pagination';
 
 const itemsPerPage = 5;
 
-const Transactions: NextPageWithLayout = () => {
+const Pending = () => {
   const [currentPage, setCurrentPage] = useState(1);
+
+  const pendingTransactions = transactions.filter(transaction => transaction.status === 'pending');
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = transactions.slice(indexOfFirstItem, indexOfLastItem);
+  const currentItems = pendingTransactions.slice(indexOfFirstItem, indexOfLastItem);
 
   return (
     <DashboardSidebar>
       <div className="w-full mt-10 px-8">
-        <TransactionHeaderTab currentTab={'all'} />
+        <TransactionHeaderTab currentTab={'pending'} />
         <div className="py-5 w-full">
           <Table className='w-full'>
             <TableHeader>
@@ -81,8 +82,8 @@ const Transactions: NextPageWithLayout = () => {
   );
 }
 
-export default Transactions;
+export default Pending;
 
-Transactions.getLayout = function getLayout(page: React.ReactElement) {
+Pending.getLayout = function getLayout(page: React.ReactElement) {
   return <DashboardLayout page={"transactions"} >{page}</DashboardLayout>;
 };

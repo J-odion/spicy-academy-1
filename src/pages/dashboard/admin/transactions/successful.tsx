@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import DashboardLayout from '@/components/layout/dashboard/DashboardLayout';
-import { NextPageWithLayout } from '@/pages/_app';
 import DashboardSidebar from '@/components/layout/dashboard/DashboardSidebar';
 import TransactionHeaderTab from '@/components/tabs/TransactionHeaderTab';
 import { Table, TableHeader, TableHead, TableBody, TableCell, TableRow } from "@/components/ui/table";
@@ -8,20 +7,23 @@ import Moment from 'react-moment';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import transactions from '@/data/transactions.json';
 import Datapagination from '@/components/pagination/Data-Pagination';
+import { NextPageWithLayout } from '@/pages/_app';
 
 const itemsPerPage = 5;
 
-const Transactions: NextPageWithLayout = () => {
+const Successful: NextPageWithLayout = () => {
   const [currentPage, setCurrentPage] = useState(1);
+
+  const successfulTransactions = transactions.filter(transaction => transaction.status === 'received');
 
   const indexOfLastItem = currentPage * itemsPerPage;
   const indexOfFirstItem = indexOfLastItem - itemsPerPage;
-  const currentItems = transactions.slice(indexOfFirstItem, indexOfLastItem);
+  const currentItems = successfulTransactions.slice(indexOfFirstItem, indexOfLastItem);
 
   return (
     <DashboardSidebar>
       <div className="w-full mt-10 px-8">
-        <TransactionHeaderTab currentTab={'all'} />
+        <TransactionHeaderTab currentTab={'successful'} />
         <div className="py-5 w-full">
           <Table className='w-full'>
             <TableHeader>
@@ -81,8 +83,8 @@ const Transactions: NextPageWithLayout = () => {
   );
 }
 
-export default Transactions;
+export default Successful;
 
-Transactions.getLayout = function getLayout(page: React.ReactElement) {
+Successful.getLayout = function getLayout(page: React.ReactElement) {
   return <DashboardLayout page={"transactions"} >{page}</DashboardLayout>;
 };
