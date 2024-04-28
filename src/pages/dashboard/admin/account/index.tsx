@@ -46,7 +46,7 @@ const Dashboard: NextPageWithLayout = () => {
 
   return (
     <DashboardSidebar>
-      <div className="w-full mt-20 md:mt-20">
+      <div className="w-full mt-20 md:mt-20" >
         <div className="items-center justify-between md:flex gap-10">
           <div className="flex flex-col">
             <div>

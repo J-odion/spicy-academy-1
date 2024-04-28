@@ -12,7 +12,7 @@ import { Button } from '@/components/ui/button';
 import { Checkbox } from "@/components/ui/checkbox";
 import Datapagination from '@/components/pagination/Data-Pagination';
 
-const itemsPerPage = 8; // Change this value based on the number of items you want to show per page
+const itemsPerPage = 8;
 
 const FreeCourses: NextPageWithLayout = () => {
   const [menuOpen, setMenuOpen] = useState<string | null>(null);
@@ -36,13 +36,15 @@ const FreeCourses: NextPageWithLayout = () => {
 
   return (
     <DashboardSidebar>
-      <div className="w-full md:mt-20">
-        <div className="flex justify-end items-center gap-4">
-          <div><Checkbox /> Select</div>
-          <Button className='inline-flex items-center gap-2 bg-[#A85334]' onClick={handleAddModal}><Plus size={18} />Add Course</Button>
+      <div className="w-full md:mt-20 mt-24">
+        <div className="flex justify-end items-center md:flex-row gap-4 mb-4">
+          <div className="md:flex md:items-center gap-2">
+            <Checkbox /> <span className="">Select</span>
+          </div>
+          <Button className='bg-[#A85334]' onClick={handleAddModal}><Plus size={18} />Add Course</Button>
         </div>
         <CoursesHeaderTab currentTab={'free-courses'} />
-        <div className='grid grid-cols-4 gap-8'>
+        <div className='grid md:grid-cols-4 grid-cols-1 gap-8'>
           {currentItems.map((course) => (
             <div key={course.id} className='flex flex-col gap-2 rounded-[6px] justify-between py-4 relative'>
               <div className='flex items-center gap-4'>
