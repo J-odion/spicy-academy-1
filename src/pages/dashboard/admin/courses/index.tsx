@@ -23,7 +23,6 @@ import DeleteModal from '@/components/modal/courses/DeleteModal';
 import EditModal from '@/components/modal/courses/EditModal';
 import { NoDataCard } from '@/components/dashboard/cards/NoDataCard';
 
-
 const Courses: NextPageWithLayout = () => {
   const router = useRouter();
   const [loading, setLoading] = useState(true);
@@ -44,36 +43,37 @@ const Courses: NextPageWithLayout = () => {
 
   return (
     <DashboardSidebar>
-      <div className="w-full md:mt-20">
+      <div className="w-full md:mt-20 mt-24">
         <CoursesHeaderTab currentTab={'category-courses'} />
 
-        <div className="py-5 w-full">
-            <Table className='w-full'>
-              <TableHeader>
-                <TableRow>
-                  <TableHead>Category</TableHead>
-                  <TableHead>Courses</TableHead>
-                  <TableHead>Enrolled students</TableHead>
-                </TableRow>
-              </TableHeader>
-              <TableBody>
-                {categories.map((category) => (
-                  <TableRow key={category.id}>
+        <div className="py-5 w-full overflow-x-auto">
+          <Table className='w-full'>
+            <TableHeader>
+              <TableRow>
+                <TableHead>Category</TableHead>
+                <TableHead>Courses</TableHead>
+                <TableHead>Enrolled students</TableHead>
+              </TableRow>
+            </TableHeader>
+            <TableBody>
+              {categories.map((category) => (
+                <TableRow key={category.id}>
                   <TableCell className='inline-flex items-center gap-4'>{category.category} <span className='cursor-pointer text-[#A85334]'><Pencil size={18} onClick={handleEditModal} /></span></TableCell>
                   <TableCell>{category.no_of_courses}</TableCell>
                   <TableCell>{category.enrolled_students}</TableCell>
                   <TableCell>
-                      <Button variant={'outline'} className='border-[#A85334] border-[1px] text-[#A85334]' onClick={() => handleViewCategory(category.category.toLowerCase())}>View</Button>
+                    <Button variant={'outline'} className='border-[#A85334] border-[1px] text-[#A85334]' onClick={() => handleViewCategory(category.category.toLowerCase())}>View</Button>
                   </TableCell>
                   <TableCell onClick={handleDeleteModal}><Trash size={20} color='#A85334' className='cursor-pointer' /></TableCell>
                 </TableRow>
-                ))}
-              </TableBody>
-            </Table>
+              ))}
+            </TableBody>
+          </Table>
         </div>
-        <div className='py-4'>
-          <Button variant={'outline'} className='border-[1px] border-[#A85334] text-[#A85334]'><span><Plus size={18} /></span>{" "}Add category</Button>
-          <Button className='ml-8 bg-[#A85334]'><span><Plus size={18} /></span>{" "}Add course</Button>
+
+        <div className='py-4 flex flex-col gap-4 sm:flex-row lg:flex-row'>
+          <Button variant={'outline'} className='border-[1px] border-[#A85334] text-[#A85334] sm:ml-0 lg:ml-0'><span><Plus size={18} /></span>{" "}Add category</Button>
+          <Button className='bg-[#A85334]'><span><Plus size={18} /></span>{" "}Add course</Button>
         </div>
       </div>
 

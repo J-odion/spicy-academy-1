@@ -14,28 +14,28 @@ html {
 
 @font-face {
   font-family: "CabinetGrotesk-Bold";
-  src: url("/public/fonts/CabinetGrotesk-Bold.otf");
+  src: url("/fonts/CabinetGrotesk-Bold.otf");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "CabinetGrotesk-Regular";
-  src: url("/public/fonts/CabinetGrotesk-Regular.otf");
+  src: url("/fonts/CabinetGrotesk-Regular.otf");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "CabinetGrotesk-Medium";
-  src: url("/public/fonts/CabinetGrotesk-Medium.otf");
+  src: url("/fonts/CabinetGrotesk-Medium.otf");
   font-weight: medium;
   font-style: normal;
 }
 
 @font-face {
   font-family: "CabinetGrotesk-Light";
-  src: url("/public/fonts/CabinetGrotesk-Light.otf");
+  src: url("/fonts/CabinetGrotesk-Light.otf");
   font-weight: light;
   font-style: normal;
 }
