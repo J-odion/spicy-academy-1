@@ -142,3 +142,55 @@ export const support = [
     email: 'kristinwatson@gmail.com',
   },
 ]
+
+
+export const subscriptionPlans = [
+  {
+      id: 1,
+      name: '1 Month',
+      price: '3,550',
+      description: [
+          'Unlimited access to all courses',
+          'Unlimited access to all courses',
+          'Unlimited access to all courses',
+          'Unlimited access to all courses',
+      ],
+      image: '/images/blob-music.svg'
+  },
+  {
+      id: 2,
+      name: '3 Month',
+      price: '10,000',
+      description: [
+          'Unlimited access to all courses',
+          'Unlimited access to all courses',
+          'Unlimited access to all courses',
+          'Unlimited access to all courses',
+      ],
+      image: '/images/blob-music-purple.svg'
+  },
+  {
+      id: 3,
+      name: '6 Month',
+      price: '18,000',
+      description: [
+          'Unlimited access to all courses',
+          'Unlimited access to all courses',
+          'Unlimited access to all courses',
+          'Unlimited access to all courses',
+      ],
+      image: '/images/blob-music-purple.svg'
+  },
+  {
+      id: 4,
+      name: '12 Month',
+      price: '30,000',
+      description: [
+          'Unlimited access to all courses',
+          'Unlimited access to all courses',
+          'Unlimited access to all courses',
+          'Unlimited access to all courses',
+      ],
+      image: '/images/blob-music-purple.svg'
+  },
+]

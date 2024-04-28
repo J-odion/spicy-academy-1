@@ -32,7 +32,7 @@ const Pending: NextPageWithLayout = () => {
 
   return (
     <DashboardSidebar>
-      <div className="w-full md:mt-20">
+      <div className="w-full md:mt-20 mt-24">
         <div className='flex justify-between'>
           <div><h1 className='text-2xl font-medium'>Tutors</h1></div>
           <Button className='bg-[#A85334]  gap-2' onClick={handleAddModal}><Plus size={18} />Add new tutor</Button>
