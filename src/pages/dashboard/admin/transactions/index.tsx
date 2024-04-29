@@ -20,7 +20,7 @@ const Transactions: NextPageWithLayout = () => {
 
   return (
     <DashboardSidebar>
-      <div className="w-full mt-10 px-8">
+      <div className="w-full md:mt-10 mt-12 px-2">
         <TransactionHeaderTab currentTab={'all'} />
         <div className="py-5 w-full">
           <Table className='w-full'>

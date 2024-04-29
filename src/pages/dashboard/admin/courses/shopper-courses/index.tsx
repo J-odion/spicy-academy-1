@@ -7,7 +7,7 @@ import CoursesHeaderTab from '@/components/tabs/CoursesHeaderTab';
 const ShopperCourses: NextPageWithLayout = () => {
   return (
     <DashboardSidebar>
-      <div className="w-full md:mt-20">
+      <div className="w-full md:mt-20 mt-24">
         <CoursesHeaderTab currentTab={'shopper-courses'} />
         <p>Shopper Courses</p>
       </div>

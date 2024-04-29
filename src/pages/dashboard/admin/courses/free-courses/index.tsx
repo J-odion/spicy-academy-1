@@ -48,7 +48,7 @@ const FreeCourses: NextPageWithLayout = () => {
           {currentItems.map((course) => (
             <div key={course.id} className='flex flex-col gap-2 rounded-[6px] justify-between py-4 relative'>
               <div className='flex items-center gap-4'>
-                <video className='rounded-md' controls>
+                <video className='rounded-md w-full' controls>
                   <source src={course.content} type="video/mp4" />
                   Your browser does not support the video tag.
                 </video>

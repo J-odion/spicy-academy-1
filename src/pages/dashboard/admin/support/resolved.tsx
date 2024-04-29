@@ -21,7 +21,7 @@ const Resolved: NextPageWithLayout = () => {
 
   return (
     <DashboardSidebar>
-      <div className="w-full md:mt-20">
+      <div className="w-full md:mt-20 mt-24">
           <div className='py-4'><h1 className='text-2xl font-medium'>Support / Resolved</h1></div>
         <SupportsHeaderTab currentTab="resolved" />
         <div className="py-5 w-full">
@@ -43,7 +43,7 @@ const Resolved: NextPageWithLayout = () => {
                   </TableCell>
                   <TableCell className='text-[#4F4F4F]'>{support.email}</TableCell>
                   <TableCell>
-                    <div className={`rounded-[6px] capitalize text-center flex justify-center items-center w-1/2 h-[2.5em] bg-[#C6E8B3] text-[#5E8D44]`}>
+                    <div className={`rounded-[6px] capitalize text-center flex justify-center items-center px-4 w-fit h-[2.5em] bg-[#C6E8B3] text-[#5E8D44]`}>
                       {support.status}
                     </div>
                   </TableCell>

@@ -27,7 +27,7 @@ const Support: NextPageWithLayout = () => {
 
   return (
     <DashboardSidebar>
-      <div className="w-full md:mt-20">
+      <div className="w-full md:mt-20 mt-24">
         <div><h1 className='text-2xl font-medium'>Support</h1></div>
         <SupportsHeaderTab currentTab="all" />
         <div className="py-5 w-full">
@@ -49,7 +49,7 @@ const Support: NextPageWithLayout = () => {
                   </TableCell>
                   <TableCell className='text-[#4F4F4F]'>{support.email}</TableCell>
                   <TableCell>
-                    <div className={`rounded-[6px] capitalize text-center flex justify-center items-center w-1/2 h-[2.5em] ${getBackgroundColor(support.status)}`}>
+                    <div className={`rounded-[6px] capitalize text-center flex justify-center items-center px-4 w-fit h-[2.5em] ${getBackgroundColor(support.status)}`}>
                       {support.status}
                     </div>
                   </TableCell>

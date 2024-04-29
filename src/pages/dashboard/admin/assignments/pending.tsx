@@ -36,7 +36,7 @@ const Pending: NextPageWithLayout = () => {
 
   return (
     <DashboardSidebar>
-      <div className="w-full md:mt-20">
+      <div className="w-full md:mt-20 mt-24">
         <div><h1 className='text-2xl font-medium'>Assignments</h1></div>
         <AssignmentsHeaderTab currentTab="pending" />
         <div className="py-4 w-full">
