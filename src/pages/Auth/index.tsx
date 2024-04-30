@@ -1,9 +1,13 @@
 import React from 'react'
+import Link from 'next/link'
 
-const index = () => {
+const Auth = () => {
   return (
-    <div>index</div>
+    <div>
+      <Link href='/'>Join as admin</Link>
+      <Link href=''>Join as student</Link>
+    </div>
   )
 }
 
-export default index
+export default Auth
