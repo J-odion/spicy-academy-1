@@ -4,14 +4,12 @@ import { TypographyH1 } from "@/components/typography";
 import { signUpFormSchema } from "@/lib/formSchema";
 import { NextPageWithLayout } from "@/pages/_app";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { Form, FormField } from "@/components/ui/form";
+import { Form, FormControl, FormField, FormItem, FormLabel } from "@/components/ui/form";
 import FormRender from "@/components/FormRender";
 import React, { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import { emailVerificationSchema } from "@/lib/formSchema";
 import { z } from "zod";
-import { Button } from "@/components/ui/button";
-import Link from "next/link";
 import { useToast } from "@/components/ui/use-toast";
 import { useRouter } from "next/router";
 import CustomButton from "@/components/CustomButton";
@@ -22,6 +20,7 @@ import {
   InputOTPSlot,
 } from "@/components/ui/input-otp"
 import VerifyModal from "@/components/modal/auth/VerifyModal";
+import { Input } from "postcss";
 
 const EmailVerification: NextPageWithLayout = () => {
   const [resendDisabled, setResendDisabled] = useState(false);
@@ -73,17 +72,27 @@ const EmailVerification: NextPageWithLayout = () => {
       <p className="text-[#6b7280] mb-8">Enter the 6-digit code we sent to <span className="text-[#E89222]">{email}</span></p>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-          <InputOTP maxLength={6}>
-            <InputOTPGroup className="space-x-4">
-              <InputOTPSlot index={0} {...form.register("otp_code")} className="bg-[#1E1E1E0D] " />
-              <InputOTPSlot index={1} {...form.register("otp_code")} className="bg-[#1E1E1E0D] "/>
-              <InputOTPSlot index={2} {...form.register("otp_code")} className="bg-[#1E1E1E0D] "/>
-              <InputOTPSeparator />
-              <InputOTPSlot index={3} {...form.register("otp_code")} className="bg-[#1E1E1E0D] "/>
-              <InputOTPSlot index={4} {...form.register("otp_code")} className="bg-[#1E1E1E0D] "/>
-              <InputOTPSlot index={5} {...form.register("otp_code")} className="bg-[#1E1E1E0D] "/>
-            </InputOTPGroup>
-          </InputOTP>
+            <FormField
+                control={form.control}
+                name="otp_code"
+                render={({ field }) => (
+                  <FormItem>
+                    <FormControl>
+                        <InputOTP maxLength={6} {...field}>
+                            <InputOTPGroup className="space-x-4">
+                                <InputOTPSlot index={0} {...form.register("otp_code")} className="bg-[#1E1E1E0D] " />
+                                <InputOTPSlot index={1} {...form.register("otp_code")} className="bg-[#1E1E1E0D] "/>
+                                <InputOTPSlot index={2} {...form.register("otp_code")} className="bg-[#1E1E1E0D] "/>
+                                <InputOTPSeparator />
+                                <InputOTPSlot index={3} {...form.register("otp_code")} className="bg-[#1E1E1E0D] "/>
+                                <InputOTPSlot index={4} {...form.register("otp_code")} className="bg-[#1E1E1E0D] "/>
+                                <InputOTPSlot index={5} {...form.register("otp_code")} className="bg-[#1E1E1E0D] "/>
+                            </InputOTPGroup>
+                        </InputOTP>
+                    </FormControl>
+                  </FormItem>
+                )}
+            />
           <CustomButton
             type="submit"
             className=" bg-[#A85334]"
