@@ -40,7 +40,7 @@ const SignIn: NextPageWithLayout = () => {
     })
     setTimeout(() => {
       setIsLoading(false);
-      router.push("/dashboard/student");
+      router.push("/dashboard/student/account");
     }, 2000);
   };
 
