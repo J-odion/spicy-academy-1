@@ -4,6 +4,12 @@ import { Input } from "./ui/input";
 import { Button } from "./ui/button";
 import { EyeIcon, EyeOffIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
+import {
+  InputOTP,
+  InputOTPGroup,
+  InputOTPSeparator,
+  InputOTPSlot,
+} from "@/components/ui/input-otp"
 
 type FormRenderProps = {
   label?: string;
@@ -34,6 +40,8 @@ const FormRender = ({
             type={showPass ? "text" : inputProps.type}
             className="bg-[#F2E9DF] border-[#F2E9DF] text-[#A85334] rounded-lg h-12 px-4 w-full focus:outline-none focus:ring-2 focus:ring-[#F2E9DF] focus:border-transparent"
           />
+
+
           {inputProps.type === "password" ? (
             <Button
               type="button"
