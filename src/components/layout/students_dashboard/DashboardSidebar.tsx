@@ -26,7 +26,7 @@ const DashboardSidebar = ({ children }: DashboardSidebarProps) => {
   const { route } = useRouter();
 
   const handleLogout = () => {
-    router.push("/");
+    router.push("/auth/login");
   };
 
   return (
