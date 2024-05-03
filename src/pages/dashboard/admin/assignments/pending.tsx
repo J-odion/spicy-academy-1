@@ -8,6 +8,7 @@ import { Table, TableHeader, TableHead, TableBody, TableCell, TableRow } from "@
 import { Button } from '@/components/ui/button';
 import Moment from 'react-moment';
 import Datapagination from '@/components/pagination/Data-Pagination';
+import GradeModal from '@/components/modal/assignments/GradeModal';
 
 
 const itemsPerPage = 8;
@@ -15,6 +16,13 @@ const itemsPerPage = 8;
 const Pending: NextPageWithLayout = () => {
 
   const [currentPage, setCurrentPage] = useState(1);
+  const [selectedAssignment, setSelectedAssignment] = useState<any>(null);
+  const [viewAssignment, setViewAssignment] = useState(false);
+
+  const handleViewAssignment = (assignment: any) => {
+    setSelectedAssignment(assignment);
+    setViewAssignment(true);
+  }
 
 
 
@@ -64,7 +72,7 @@ const Pending: NextPageWithLayout = () => {
                   <TableCell>{assignment.level}</TableCell>
                   <TableCell>{assignment.lesson}</TableCell>
                   <TableCell>
-                    <Button variant={'outline'} className='border-[1px] border-[#A85334] text-[#A85334]'>
+                    <Button variant={'outline'} className='border-[1px] border-[#A85334] text-[#A85334]' onClick={()  => handleViewAssignment(assignment)}>
                       {assignment.status === 'reviewed' ? 'View Remark' : 'Grade'}
                     </Button>
                   </TableCell>
@@ -80,6 +88,14 @@ const Pending: NextPageWithLayout = () => {
             currentPage={currentPage}
             onPageChange={setCurrentPage}
           />
+      {selectedAssignment && (
+        <GradeModal
+          title={selectedAssignment.assignments}
+          open={viewAssignment}
+          setOpen={setViewAssignment}
+          assignments={selectedAssignment}
+        />
+      )}
     </DashboardSidebar>
   );
 };
