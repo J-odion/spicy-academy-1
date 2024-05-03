@@ -36,10 +36,12 @@ const DashboardSidebar = ({ children }: DashboardSidebarProps) => {
 
           <div>
             <div className="flex items-center gap-3 justify-center h-20">
-              <Avatar>
-                <AvatarImage src="https://github.com/shadcn.png" alt="avatar" />
-                <AvatarFallback>CN</AvatarFallback>
-              </Avatar>
+              <Link href='/dashboard/admin/account/profile'>
+                <Avatar>
+                  <AvatarImage src="https://github.com/shadcn.png" alt="avatar" />
+                  <AvatarFallback>CN</AvatarFallback>
+                </Avatar>
+              </Link>
               <h1 className="text-2xl font-bold">Admin</h1>
             </div>
             {/* <nav className="flex-grow"> */}
