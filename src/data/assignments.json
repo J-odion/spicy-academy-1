@@ -6,7 +6,17 @@
         "level": "Beginner",
         "lesson": "Make lessons load faster",
         "grade": 90,
-        "remark": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done ",
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done "
+            },
+            {
+                "id":2,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
+        "remark": "Kristin is making good progress in her fingerpicking technique. She should focus more on dynamics.",
         "status": "pending",
         "submission_date": "2019-01-01"
     },
@@ -17,6 +27,16 @@
         "level": "Intermediate",
         "lesson": "Improving fingerpicking technique",
         "grade": 85,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "John is making good progress in his fingerpicking technique. He should focus more on dynamics.",
         "status": "reviewed",
         "submission_date": "2019-01-01"
@@ -28,6 +48,16 @@
         "level": "Advanced",
         "lesson": "Mastering jazz chords",
         "grade": 95,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "Alice has shown exceptional dedication to mastering jazz chords. Her playing is expressive and precise.",
         "status": "pending",
         "submission_date": "2019-01-01"
@@ -39,6 +69,16 @@
         "level": "Intermediate",
         "lesson": "Understanding music theory",
         "grade": 88,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "Michael demonstrates a solid understanding of music theory concepts. He should continue practicing to strengthen his skills.",
         "status": "reviewed",
         "submission_date": "2019-01-01"
@@ -50,6 +90,16 @@
         "level": "Beginner",
         "lesson": "Basic chord shapes",
         "grade": 78,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "Emily is improving steadily in learning basic chord shapes. She needs to work on transitioning between chords more smoothly.",
         "status": "pending",
         "submission_date": "2019-01-01"
@@ -61,6 +111,16 @@
         "level": "Advanced",
         "lesson": "Exploring advanced scales",
         "grade": 92,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "David has a natural aptitude for exploring advanced scales. He should focus on incorporating them into his improvisations.",
         "status": "reviewed",
         "submission_date": "2019-01-01"
@@ -72,6 +132,16 @@
         "level": "Intermediate",
         "lesson": "Rhythm and timing exercises",
         "grade": 85,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "Sarah has shown improvement in her rhythm and timing exercises. She should continue practicing with a metronome to refine her skills.",
         "status": "pending",
         "submission_date": "2019-01-01"
@@ -83,6 +153,16 @@
         "level": "Beginner",
         "lesson": "Introduction to music notation",
         "grade": 75,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "James is making progress in understanding music notation. He should practice sight-reading to improve his fluency.",
         "status": "reviewed",
         "submission_date": "2019-01-01"
@@ -94,6 +174,16 @@
         "level": "Advanced",
         "lesson": "Modal interchange",
         "grade": 94,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "Olivia demonstrates a deep understanding of modal interchange. She should experiment with applying it in different musical contexts.",
         "status": "pending",
         "submission_date": "2019-01-01"
@@ -105,6 +195,16 @@
         "level": "Amateur",
         "lesson": "Understanding music theory",
         "grade": 88,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "Michael demonstrates a solid understanding of music theory concepts. He should continue practicing to strengthen his skills.",
         "status": "reviewed",
         "submission_date": "2019-01-01"
@@ -116,6 +216,16 @@
         "level": "Amateur",
         "lesson": "Introduction to music notation",
         "grade": 75,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "James is making progress in understanding music notation. He should practice sight-reading to improve his fluency.",
         "status": "reviewed",
         "submission_date": "2019-01-01"
@@ -127,6 +237,16 @@
         "level": "Amateur",
         "lesson": "Rhythm and timing exercises",
         "grade": 85,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "Sarah has shown improvement in her rhythm and timing exercises. She should continue practicing with a metronome to refine her skills.",
         "status": "pending",
         "submission_date": "2019-01-01"
@@ -138,6 +258,16 @@
         "level": "Intermediate",
         "lesson": "Improvisation techniques",
         "grade": 89,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "Alexander shows promise in improvisation techniques. He should experiment with incorporating different scales and motifs.",
         "status": "reviewed",
         "submission_date": "2019-01-01"
@@ -149,6 +279,16 @@
         "level": "Advanced",
         "lesson": "Harmonic analysis",
         "grade": 96,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "Isabella excels in harmonic analysis. She should continue exploring complex harmonic progressions.",
         "status": "pending",
         "submission_date": "2019-01-01"
@@ -160,6 +300,16 @@
         "level": "Beginner",
         "lesson": "Learning to read tablature",
         "grade": 79,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "Noah is making progress in learning to read tablature. He should practice with a variety of songs to reinforce his skills.",
         "status": "reviewed",
         "submission_date": "2019-01-01"
@@ -171,6 +321,16 @@
         "level": "Advanced",
         "lesson": "Advanced rhythm studies",
         "grade": 93,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "Mia demonstrates exceptional skill in advanced rhythm studies. She should challenge herself with complex rhythmic patterns.",
         "status": "pending",
         "submission_date": "2019-01-01"
@@ -182,6 +342,16 @@
         "level": "Intermediate",
         "lesson": "Ear training exercises",
         "grade": 88,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "Liam's ear training abilities are improving steadily. He should practice identifying intervals and chord progressions.",
         "status": "reviewed",
         "submission_date": "2019-01-01"
@@ -193,6 +363,16 @@
         "level": "Beginner",
         "lesson": "Basic music theory",
         "grade": 76,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "Charlotte is grasping basic music theory concepts. She should review the material regularly to reinforce her understanding.",
         "status": "pending",
         "submission_date": "2019-01-01"
@@ -204,6 +384,16 @@
         "level": "Intermediate",
         "lesson": "Building speed and agility",
         "grade": 87,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "Elijah is progressing well in building speed and agility. He should focus on maintaining accuracy while playing at faster tempos.",
         "status": "reviewed",
         "submission_date": "2019-01-01"
@@ -215,6 +405,16 @@
         "level": "Beginner",
         "lesson": "Strumming patterns",
         "grade": 80,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "Amelia is learning strumming patterns effectively. She should practice with a variety of songs to reinforce her skills.",
         "status": "pending",
         "submission_date": "2019-01-01"
@@ -226,6 +426,16 @@
         "level": "Advanced",
         "lesson": "Harmonic minor scale",
         "grade": 97,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "Henry has mastered the harmonic minor scale. He should explore its applications in different musical genres.",
         "status": "reviewed",
         "submission_date": "2019-01-01"
@@ -237,6 +447,16 @@
         "level": "Intermediate",
         "lesson": "Fingerstyle techniques",
         "grade": 86,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "Avery is improving in fingerstyle techniques. She should focus on refining her tone and dynamics.",
         "status": "pending",
         "submission_date": "2019-01-01"
@@ -248,6 +468,16 @@
         "level": "Beginner",
         "lesson": "Understanding time signatures",
         "grade": 77,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "Sofia is learning to understand time signatures. She should practice counting rhythms aloud to improve her timing.",
         "status": "reviewed",
         "submission_date": "2019-01-01"
@@ -259,6 +489,16 @@
         "level": "Advanced",
         "lesson": "Extended chord voicings",
         "grade": 95,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "Jackson demonstrates proficiency in extended chord voicings. He should explore different inversions and voicing options.",
         "status": "pending",
         "submission_date": "2019-01-01"
@@ -270,6 +510,16 @@
         "level": "Intermediate",
         "lesson": "Sight-reading exercises",
         "grade": 88,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "Aria is improving in sight-reading exercises. She should practice with a variety of musical pieces to expand her repertoire.",
         "status": "reviewed",
         "submission_date": "2019-01-01"
@@ -281,6 +531,16 @@
         "level": "Beginner",
         "lesson": "Basic music notation",
         "grade": 79,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "Ethan is learning basic music notation. He should practice writing rhythms and melodies to reinforce his understanding.",
         "status": "pending",
         "submission_date": "2019-01-01"
@@ -292,6 +552,16 @@
         "level": "Advanced",
         "lesson": "Advanced arpeggios",
         "grade": 94,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "Madison demonstrates proficiency in advanced arpeggios. She should focus on developing speed and accuracy.",
         "status": "reviewed",
         "submission_date": "2019-01-01"
@@ -303,6 +573,16 @@
         "level": "Intermediate",
         "lesson": "Chord progressions",
         "grade": 87,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "Logan is improving in understanding chord progressions. He should practice analyzing songs to identify common chord patterns.",
         "status": "pending",
         "submission_date": "2019-01-01"
@@ -314,6 +594,16 @@
         "level": "Beginner",
         "lesson": "Basic rhythm exercises",
         "grade": 81,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "Ella is practicing basic rhythm exercises. She should focus on maintaining a steady tempo and consistent rhythm.",
         "status": "reviewed",
         "submission_date": "2019-01-01"
@@ -325,6 +615,16 @@
         "level": "Advanced",
         "lesson": "Modal mixture",
         "grade": 96,
+        "assignments": [
+            {
+                "id":1,
+                "answer": "This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            },
+            {
+                "id": 2,
+                "answer":"This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar  This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done when playing the guitar This is what i think should be done"
+            }
+        ],
         "remark": "Carter demonstrates a deep understanding of modal mixture. He should experiment with incorporating borrowed chords into his compositions.",
         "status": "pending",
         "submission_date": "2019-01-01"

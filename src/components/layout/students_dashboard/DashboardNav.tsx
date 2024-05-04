@@ -48,10 +48,10 @@ const DashboardNav = ({page, toggleSideBar, setToggleSideBar}: Props) => {
 
   return (
     <>
-      <nav className="fixed top-0 z-40 lg:ml-72 w-full px-5 py-6 bg-white text-black md:px-10 lg:py-4 border-b">
+      <nav className="fixed top-0 z-40 lg:pl-72 w-full px-5 py-6 bg-white text-black md:px-10 lg:py-4 border-b">
         <div className="flex items-center justify-between">
           <div>
-            <h1 className="text-sm font-normal capitalize text-[#1C1C1C66]">{page}</h1>
+            <h1 className="text-2xl capitalize font-bold">{page}</h1>
           </div>
           <div className="flex items-center space-x-4">
             <div className="hidden lg:flex">
@@ -86,12 +86,10 @@ const DashboardNav = ({page, toggleSideBar, setToggleSideBar}: Props) => {
         {toggleSideBar && (
           <div className='flex flex-col pt-4 '>
             <div className="flex items-center gap-3 justify-center h-20">
-              <Link href='/dashboard/admin/account/profile'>
-                <Avatar>
-                  <AvatarImage src="https://github.com/shadcn.png" alt="avatar" />
-                  <AvatarFallback>CN</AvatarFallback>
-                </Avatar>
-              </Link>
+              <Avatar>
+                <AvatarImage src="https://github.com/shadcn.png" alt="avatar" />
+                <AvatarFallback>CN</AvatarFallback>
+              </Avatar>
               <h1 className="text-2xl font-bold">Admin</h1>
             </div>
             <ul className="w-60 pt-10 text-[#959190]">

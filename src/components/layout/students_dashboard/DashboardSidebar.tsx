@@ -26,7 +26,7 @@ const DashboardSidebar = ({ children }: DashboardSidebarProps) => {
   const { route } = useRouter();
 
   const handleLogout = () => {
-    router.push("/");
+    router.push("/auth/login");
   };
 
   return (
@@ -36,20 +36,18 @@ const DashboardSidebar = ({ children }: DashboardSidebarProps) => {
 
           <div>
             <div className="flex items-center gap-3 justify-center h-20">
-              <Link href='/dashboard/admin/account/profile'>
-                <Avatar>
-                  <AvatarImage src="https://github.com/shadcn.png" alt="avatar" />
-                  <AvatarFallback>CN</AvatarFallback>
-                </Avatar>
-              </Link>
-              <h1 className="text-2xl font-bold">Admin</h1>
+              <Avatar>
+                <AvatarImage src="https://github.com/shadcn.png" alt="avatar" />
+                <AvatarFallback>CN</AvatarFallback>
+              </Avatar>
+              <h1 className="text-2xl font-bold">Student</h1>
             </div>
             {/* <nav className="flex-grow"> */}
             <ul className="flex flex-col py-4 px-4">
-              <Link href="/dashboard/admin/account">
+              <Link href="/dashboard/student/account">
                 <li
                   className={
-                    route === "/dashboard/admin/account"
+                    route === "/dashboard/student/account"
                       ? "bg-[#1C1C1C0D] py-3 pl-10 text-[#1C1C1C] rounded-xl"
                       : "my-1 py-3 pl-10 hover:bg-[#1C1C1C0D] hover:text-[#1C1C1C] rounded-xl"
                   }
@@ -63,10 +61,10 @@ const DashboardSidebar = ({ children }: DashboardSidebarProps) => {
                 </li>
               </Link>
 
-              <Link href="/dashboard/admin/courses">
+              <Link href="/dashboard/student/courses">
                 <li
                   className={
-                    route === "/dashboard/admin/courses"
+                    route === "/dashboard/student/courses"
                       ? "bg-[#1C1C1C0D] py-3 pl-10 text-[#1C1C1C] rounded-xl"
                       : "my-1 py-3 pl-10 hover:bg-[#1C1C1C0D] hover:text-[#1C1C1C] rounded-xl"
                   }
@@ -75,100 +73,49 @@ const DashboardSidebar = ({ children }: DashboardSidebarProps) => {
                     <span className="mr-3">
                       <BookOpen size="20" />
                     </span>
-                    Courses
+                    My Course(s)
                   </div>
                 </li>
               </Link>
 
-              <Link href="/dashboard/admin/subscription-plans">
-                <li
+              <Link href="/dashboard/student/shoppers">
+              <li
                   className={
-                    route === "/dashboard/admin/subscription-plans"
+                    route === "/dashboard/student/shoppers"
                       ? "bg-[#1C1C1C0D] py-3 pl-10 text-[#1C1C1C] rounded-xl"
                       : "my-1 py-3 pl-10 hover:bg-[#1C1C1C0D] hover:text-[#1C1C1C] rounded-xl"
                   }
                 >
                   <div className="flex items-center">
                     <span className="mr-3">
-                      <BookText size="20" />
+                      <BookOpen size="20" />
                     </span>
-                    Subscription Plans
+                    Shoppers
                   </div>
                 </li>
               </Link>
 
-              <Link href="/dashboard/admin/transactions">
+              <Link href="/dashboard/student/curriculum">
                 <li
-                  className={
-                    route === "/dashboard/admin/transactions"
-                      ? "bg-[#1C1C1C0D] py-3 pl-10 text-[#1C1C1C] rounded-xl"
-                      : "my-1 py-3 pl-10 hover:bg-[#1C1C1C0D] hover:text-[#1C1C1C] rounded-xl"
-                  }
-                >
-                  <div className="flex items-center">
-                    <span className="mr-3">
-                      <BookText size="20" />
-                    </span>
-                    Transactions
-                  </div>
-                </li>
+                    className={
+                        route === "/dashboard/student/curriculum"
+                        ? "bg-[#1C1C1C0D] py-3 pl-10 text-[#1C1C1C] rounded-xl"
+                        : "my-1 py-3 pl-10 hover:bg-[#1C1C1C0D] hover:text-[#1C1C1C] rounded-xl"
+                    }
+                    >
+                    <div className="flex items-center">
+                        <span className="mr-3">
+                        <BookOpen size="20" />
+                        </span>
+                        Curriculum
+                    </div>
+                    </li>
               </Link>
 
-              <Link href="/dashboard/admin/tutors">
+              <Link href="/dashboard/student/chat-forum">
                 <li
                   className={
-                    route === "/dashboard/admin/tutors"
-                      ? "bg-[#1C1C1C0D] py-3 pl-10 text-[#1C1C1C] rounded-xl"
-                      : "my-1 py-3 pl-10 hover:bg-[#1C1C1C0D] hover:text-[#1C1C1C] rounded-xl"
-                  }
-                >
-                  <div className="flex items-center">
-                    <span className="mr-3">
-                      <ShoppingBag size="20" />
-                    </span>
-                    Tutors
-                  </div>
-                </li>
-              </Link>
-
-              <Link href="/dashboard/admin/students">
-                <li
-                  className={
-                    route === "/dashboard/admin/students"
-                      ? "bg-[#1C1C1C0D] py-3 pl-10 text-[#1C1C1C] rounded-xl"
-                      : "my-1 py-3 pl-10 hover:bg-[#1C1C1C0D] hover:text-[#1C1C1C] rounded-xl"
-                  }
-                >
-                  <div className="flex items-center">
-                    <span className="mr-3">
-                      <Users size="20" />
-                    </span>
-                    Students
-                  </div>
-                </li>
-              </Link>
-
-              <Link href="/dashboard/admin/assignments">
-                <li
-                  className={
-                    route === "/dashboard/admin/assignments"
-                      ? "bg-[#1C1C1C0D] py-3 pl-10 text-[#1C1C1C] rounded-xl"
-                      : "my-1 py-3 pl-10 hover:bg-[#1C1C1C0D] hover:text-[#1C1C1C] rounded-xl"
-                  }
-                >
-                  <div className="flex items-center">
-                    <span className="mr-3">
-                      <MessageCircle size="20" />
-                    </span>
-                    Assignments
-                  </div>
-                </li>
-              </Link>
-
-              <Link href="/dashboard/admin/chat-forum">
-                <li
-                  className={
-                    route === "/dashboard/admin/chat-forum"
+                    route === "/dashboard/student/chat-forum"
                       ? "bg-[#1C1C1C0D] py-3 pl-10 text-[#1C1C1C] rounded-xl"
                       : "my-1 py-3 pl-10 hover:bg-[#1C1C1C0D] hover:text-[#1C1C1C] rounded-xl"
                   }
@@ -182,10 +129,45 @@ const DashboardSidebar = ({ children }: DashboardSidebarProps) => {
                 </li>
               </Link>
 
-              <Link href="/dashboard/admin/support">
+              <Link href="/dashboard/student/transactions">
                 <li
                   className={
-                    route === "/dashboard/admin/support"
+                    route === "/dashboard/student/transactions"
+                      ? "bg-[#1C1C1C0D] py-3 pl-10 text-[#1C1C1C] rounded-xl"
+                      : "my-1 py-3 pl-10 hover:bg-[#1C1C1C0D] hover:text-[#1C1C1C] rounded-xl"
+                  }
+                >
+                  <div className="flex items-center">
+                    <span className="mr-3">
+                      <BookText size="20" />
+                    </span>
+                    Transactions
+                  </div>
+                </li>
+              </Link>
+
+              <Link href="/dashboard/student/subscription-plans">
+                <li
+                  className={
+                    route === "/dashboard/student/subscription-plans"
+                      ? "bg-[#1C1C1C0D] py-3 pl-10 text-[#1C1C1C] rounded-xl"
+                      : "my-1 py-3 pl-10 hover:bg-[#1C1C1C0D] hover:text-[#1C1C1C] rounded-xl"
+                  }
+                >
+                  <div className="flex items-center">
+                    <span className="mr-3">
+                      <BookText size="20" />
+                    </span>
+                    Subscription Plans
+                  </div>
+                </li>
+              </Link>
+
+
+              <Link href="/dashboard/student/support">
+                <li
+                  className={
+                    route === "/dashboard/student/support"
                       ? "bg-[#1C1C1C0D] py-3 pl-10 text-[#1C1C1C] rounded-xl"
                       : "my-1 py-3 pl-10 hover:bg-[#1C1C1C0D] hover:text-[#1C1C1C] rounded-xl"
                   }
