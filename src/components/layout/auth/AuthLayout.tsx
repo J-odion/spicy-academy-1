@@ -39,7 +39,7 @@ const authInfo: AuthInfo = {
     height: 350,
   },
   forgotPassword: {
-    image: `${imagePath}/forgot-password.svg`,
+    image: `${imagePath}/guitar_bg.png`,
     width: 500,
     height: 600,
   },
@@ -49,20 +49,18 @@ const authInfo: AuthInfo = {
     height: 600,
   },
   resetPassword: {
-    image: `${imagePath}/reset-password.svg`,
+    image: `${imagePath}/guitar_bg.png`,
     width: 600,
     height: 600,
   },
   signUp: {
-    title: "Hi, create an account to get started",
-    description: `"Do you have multiple accounts ? Do you want to be able to access all of your accounts from one device? then you need to ectype.`,
     image: `${imagePath}/guitar_bg.png`,
     className: "m-0 p-0",
     width: 700,
     height: 350,
   },
   emailPasswordReset: {
-    image: `${imagePath}/password-reset.svg`,
+    image: `${imagePath}/guitar_bg.png`,
     width: 600,
     height: 600,
   },
