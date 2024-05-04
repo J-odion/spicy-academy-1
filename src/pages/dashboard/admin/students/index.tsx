@@ -86,7 +86,7 @@ const Students: NextPageWithLayout = () => {
           </div>
           <div className="grid md:grid-cols-5 gap-4 mt-5">
             {plans.map((plan) => (
-              <div key={plan.id} className="bg-white shadow-md rounded-[6px] overflow-hidden border-2 relative" style={{ backgroundColor: plan.color }}>
+              <div key={plan.id} className="shadow-md rounded-[6px] overflow-hidden border-2 relative text-white" style={{ backgroundColor: plan.color }}>
                 <div className="p-4">
                   <p className="capitalize text-lg">{plan.name} plan</p>
                   <p className="font-bold text-2xl mt-2">₦{plan.price}</p>
