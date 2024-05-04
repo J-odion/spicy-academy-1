@@ -34,9 +34,6 @@ const imagePath = "/images";
 
 const authInfo: AuthInfo = {
   signIn: {
-    title: "Welcome to Ectype login page",
-    description:
-      "Account management made effortless. Streamline your trading activities with Ectype's intuitive login page. Gain instant access to all your linked accounts, Allowing you manage and execute trades effortlessly.",
     image: `${imagePath}/guitar_bg.png`,
     width: 600,
     height: 350,
@@ -83,7 +80,7 @@ function AuthLayout({ children, page }: AuthLayoutProps) {
       {children}
       <section className="col-span-6 ">
         <div className="p-5 lg:px-24">
-          <Image src={currentPageInfo.image} width={currentPageInfo.width} height={currentPageInfo.height} alt="Guitar" />
+          <Image src={currentPageInfo.image} width={currentPageInfo.width} height={currentPageInfo.height} alt="Guitar" className=" h-screen w-screen" />
         </div>
       </section>
 
