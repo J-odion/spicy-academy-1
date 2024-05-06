@@ -74,11 +74,11 @@ function AuthLayout({ children, page }: AuthLayoutProps) {
 
 
   return (
-    <main className="mx-auto grid lg:h-screen lg:grid-cols-12 bg-[#FDF4E9]">
+    <main className="mx-auto grid lg:h-screen lg:grid-cols-12">
       {children}
-      <section className="col-span-6 ">
+      <section className="col-span-6">
         <div className="p-5 lg:px-24">
-          <Image src={currentPageInfo.image} width={currentPageInfo.width} height={currentPageInfo.height} alt="Guitar" className=" h-screen w-screen" />
+          <Image src={currentPageInfo.image} width={currentPageInfo.width} height={currentPageInfo.height} alt="Guitar" className="" />
         </div>
       </section>
 

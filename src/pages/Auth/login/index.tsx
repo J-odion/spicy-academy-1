@@ -46,7 +46,7 @@ const SignIn: NextPageWithLayout = () => {
 
   return (
     <AuthSection>
-      <TypographyH1 className="mb-4">Hi, create an account to get started</TypographyH1>
+      <TypographyH1 className="mb-4">Welcome back</TypographyH1>
       <p className="">
             Don&apos;t have an account?{" "}
             <Link href="/auth/signup" className="text-[#A85334]">
@@ -55,14 +55,14 @@ const SignIn: NextPageWithLayout = () => {
           </p>
 
       <Form {...form}>
-        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
           <FormField
             control={form.control}
             name="email"
             render={({ field }) => (
               <FormRender
-                label="Email"
-                placeholder="Enter your email"
+
+                placeholder="Enter email address / username"
                 field={field}
               />
             )}
@@ -73,8 +73,8 @@ const SignIn: NextPageWithLayout = () => {
             name="password"
             render={({ field }) => (
               <FormRender
-                label="Password"
-                placeholder="Enter your password"
+
+                placeholder="Enter password"
                 field={field}
                 type="password"
               />
@@ -84,7 +84,7 @@ const SignIn: NextPageWithLayout = () => {
 
           <CustomButton
             type="submit"
-            className=" bg-[#A85334]"
+            className=" bg-[#A85334] w-full"
             disabled={isLoading}
             isLoading={isLoading}
           >
