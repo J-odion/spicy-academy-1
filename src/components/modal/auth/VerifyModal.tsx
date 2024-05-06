@@ -3,6 +3,8 @@ import { Dialog, DialogHeader, DialogTitle, DialogContent } from "@/components/u
 import { Button } from '@/components/ui/button';
 import { ThumbsUp } from 'lucide-react';
 import { useRouter } from 'next/router';
+import verify from '/public/images/verify.svg';
+import Image from 'next/image';
 
 type ModalProps = {
     open: boolean;
@@ -21,11 +23,12 @@ const VerifyModal = ({open, setOpen}: ModalProps) => {
         <DialogContent className="p-14 sm:rounded-[8px]">
             <DialogHeader>
                 <DialogTitle
-                    className={` font-medium flex items-center justify-center text-center pb-5 text-xl`}
+                    className={` font-medium flex flex-col items-center justify-center text-center text-xl`}
                 >
-                    <ThumbsUp size={32} className="text-[#A85334] mr-4" /> Account created successfully!
+                    <Image src={verify} alt="verify" width={82} height={82} className='mb-6'/>
+                    <p className='font-medium text-2xl'>Account Verified</p>
                 </DialogTitle>
-                <p>Click okay to login to your newly created account</p>
+                <p className='pb-14 text-[15px] text-center'>Click okay to login to your newly created account</p>
                 <Button className="bg-[#A85334] mt-8" onClick={handleOkay}>Okay</Button>
             </DialogHeader>
         </DialogContent>
