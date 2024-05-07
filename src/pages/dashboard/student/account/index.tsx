@@ -71,12 +71,12 @@ const Dashboard: NextPageWithLayout = () => {
               <p>
                 Dive into our{" "}
                 <span className="text-[#D06B0D]">
-                  <Link href="/dashboard/student/courses">courses</Link>
+                  <Link href="/dashboard/student/buy_courses">courses</Link>
                 </span>{" "}
                 now..
               </p>
               <Button variant={"link"} className="text-[#A85334]">
-                <Link href="/dashboard/student/courses">View all</Link>
+                <Link href="/dashboard/student/buy_courses">View all</Link>
               </Button>
             </div>
             <div className=" grid md:grid-cols-4 gap-4">
