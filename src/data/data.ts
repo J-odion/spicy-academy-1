@@ -288,3 +288,96 @@ export const student_courses = [
     price: 3200
   },
 ];
+
+export const free_lessons = [
+  {
+    id: 1,
+    title: 'Introduction to playing the guitar',
+    video: '/videos/play_guitar.mp4',
+    time: '10:00'
+  },
+  {
+    id: 2,
+    title: 'Introduction to playing the piano',
+    video: '/videos/play_guitar.mp4',
+    time: '10:00'
+  },
+  {
+    id: 3,
+    title: 'Introduction to playing the violin',
+    video: '/videos/play_guitar.mp4',
+    time: '10:00'
+  },
+  {
+    id: 4,
+    title: 'Introduction to playing the drums',
+    video: '/videos/play_guitar.mp4',
+    time: '10:00'
+  },
+  {
+    id: 5,
+    title: 'Introduction to playing the saxophone',
+    video: '/videos/play_guitar.mp4',
+    time: '10:00'
+  },
+  {
+    id: 6,
+    title: 'Introduction to playing the guitar',
+    video: '/videos/play_guitar.mp4',
+    time: '10:00'
+  },
+  {
+    id: 7,
+    title: 'Introduction to playing the piano',
+    video: '/videos/play_guitar.mp4',
+    time: '10:00'
+  },
+  {
+    id: 8,
+    title: 'Introduction to playing the violin',
+    video: '/videos/play_guitar.mp4',
+    time: '10:00'
+  },
+  {
+    id: 9,
+    title: 'Introduction to playing the drums',
+    video: '/videos/play_guitar.mp4',
+    time: '10:00'
+  },
+  {
+    id: 10,
+    title: 'Introduction to playing the saxophone',
+    video: '/videos/play_guitar.mp4',
+    time: '10:00'
+  },
+  {
+    id: 11,
+    title: 'Introduction to playing the guitar',
+    video: '/videos/play_guitar.mp4',
+    time: '10:00'
+  },
+  {
+    id: 12,
+    title: 'Introduction to playing the piano',
+    video: '/videos/play_guitar.mp4',
+    time: '10:00'
+  },
+  {
+    id: 13,
+    title: 'Introduction to playing the violin',
+    video: '/videos/play_guitar.mp4',
+    time: '10:00'
+  },
+  {
+    id: 14,
+    title: 'Introduction to playing the drums',
+    video: '/videos/play_guitar.mp4',
+    time: '10:00'
+  },
+  {
+    id: 15,
+    title: 'Introduction to playing the saxophone',
+    video: '/videos/play_guitar.mp4',
+    time: '10:00'
+  },
+]

@@ -4,7 +4,7 @@ import DashboardSidebar from "@/components/layout/students_dashboard/DashboardSi
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Plus } from "lucide-react";
-import { student_courses } from "@/data/data";
+import { student_courses, free_lessons } from "@/data/data";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -18,23 +18,52 @@ const Dashboard: NextPageWithLayout = () => {
   };
 
   const limitedCourses = student_courses.slice(0, 4);
+  const limitedLessons = free_lessons.slice(0, 4);
 
   return (
     <DashboardSidebar>
       <div className="w-full mt-20 md:mt-20">
-        <div className="flex flex-col">
+        <div className="flex flex-col space-y-10">
           <div className="flex justify-between items-center">
             <h2>Elevate your skills today!</h2>
             <Button className="bg-[#A85334] rounded-[6px] flex gap-2 items-center">
               <Plus size={18} /> Subscribe to a plan
             </Button>
           </div>
+
+          <div>
           <p>Level up with each category..</p>
           <div></div>
+          </div>
+
           <div>
-            <p>
-              Get fired up with <span>free lessons</span>
-            </p>
+            <div className="flex justify-between">
+              <p>
+                Get fired up with{" "}
+                <span className="text-[#D06B0D]">
+                  <Link href="/dashboard/student/free_lessons">
+                    Free lessons...
+                  </Link>
+                </span>
+              </p>
+              <Button variant={"link"} className="text-[#A85334]">
+                <Link href="/dashboard/student/free_lessons">View all</Link>
+              </Button>
+            </div>
+            <div className=" grid md:grid-cols-4 gap-4">
+              {limitedLessons.map((lesson) => (
+                <div key={lesson.id} className=" flex flex-col space-y-4">
+                  <video className="rounded-md w-full" controls>
+                    <source src={lesson.video} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                  <h3 className="text-normal font-md text-[#1E1E1E]">
+                    {lesson.title}
+                  </h3>
+                  <p className="text-[#1E1E1E80] text-sm">{lesson.time}</p>
+                </div>
+              ))}
+            </div>
           </div>
 
           <div>
