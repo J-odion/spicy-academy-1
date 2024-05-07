@@ -381,3 +381,157 @@ export const free_lessons = [
     time: '10:00'
   },
 ]
+
+
+export const faq = [
+  {
+    id: 1,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 2,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 3,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 4,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 5,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 6,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 7,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 8,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 9,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 10,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 11,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 12,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 13,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 14,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 15,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 16,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 17,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 18,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 19,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 20,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 21,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 22,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 23,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 24,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 25,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 26,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 27,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 28,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 29,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  },
+  {
+    id: 30,
+    question: 'How can i subscribe using Spicy units?',
+    answer: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eget bibendum libero. Donec euismod sapien ac massa lacinia, a fermentum nunc ultricies. Nullam nec nunc nec nunc.'
+  }
+]
