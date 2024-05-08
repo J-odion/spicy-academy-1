@@ -54,7 +54,7 @@ const Support: NextPageWithLayout = () => {
             </Accordion>
         </div>
         <div className="bg-[#F4C991] py-6 px-8 mt-8">
-          <p className="pb-4">Can't find your answers? Report your complaints</p>
+          <p className="pb-4">Can&apos;t find your answers? Report your complaints</p>
           <form onSubmit={handleSubmit(onSubmit)} autoComplete="off" className="space-y-8">
               <Input
                 {...register("email")}
