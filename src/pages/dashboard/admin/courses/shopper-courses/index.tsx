@@ -1,7 +1,7 @@
 import React from 'react'
 import { NextPageWithLayout } from '@/pages/_app';
-import DashboardSidebar from '@/components/layout/dashboard/DashboardSidebar';
-import DashboardLayout from '@/components/layout/dashboard/DashboardLayout';
+import DashboardSidebar from '@/components/layout/admin_dashboard/DashboardSidebar';
+import DashboardLayout from '@/components/layout/admin_dashboard/DashboardLayout';
 import CoursesHeaderTab from '@/components/tabs/admin_dashboard/CoursesHeaderTab';
 
 const ShopperCourses: NextPageWithLayout = () => {

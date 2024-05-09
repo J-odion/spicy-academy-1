@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NextPageWithLayout } from "@/pages/_app";
-import DashboardSidebar from "@/components/layout/dashboard/DashboardSidebar";
-import DashboardLayout from "@/components/layout/dashboard/DashboardLayout";
+import DashboardSidebar from "@/components/layout/admin_dashboard/DashboardSidebar";
+import DashboardLayout from "@/components/layout/admin_dashboard/DashboardLayout";
 import { Button } from "@/components/ui/button";
 import { Table, TableBody, TableCell, TableRow } from "@/components/ui/table";
 import Moment from "react-moment";
@@ -14,7 +14,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import Image from "next/image";
-import { data } from "@/components/layout/dashboard/Cards";
+import { data } from "@/components/layout/admin_dashboard/Cards";
 import { BookOpen } from "lucide-react";
 import { requests, transactions, support } from "@/data/data";
 
