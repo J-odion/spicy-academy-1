@@ -3,7 +3,7 @@ import { NextPageWithLayout } from '@/pages/_app'
 import DashboardSidebar from '@/components/layout/dashboard/DashboardSidebar'
 import DashboardLayout from '@/components/layout/dashboard/DashboardLayout'
 import supports from '@/data/supports.json'
-import SupportsHeaderTab from '@/components/tabs/SupportsHeaderTab'
+import SupportsHeaderTab from '@/components/tabs/admin_dashboard/SupportsHeaderTab'
 import { Table, TableHeader, TableHead, TableBody, TableCell, TableRow } from "@/components/ui/table";
 import { Button } from '@/components/ui/button'
 import Moment from 'react-moment'

@@ -48,7 +48,7 @@ const DashboardNav = ({page, toggleSideBar, setToggleSideBar}: Props) => {
 
   return (
     <>
-      <nav className="fixed top-0 z-40 lg:pl-72 w-full px-5 py-6 bg-white text-black md:px-10 lg:py-4 border-b">
+      <nav className="fixed top-0 z-40 lg:ml-72 w-full px-5 py-6 bg-white text-black md:px-10 lg:py-4 border-b">
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-2xl capitalize font-bold">{page}</h1>
@@ -90,13 +90,13 @@ const DashboardNav = ({page, toggleSideBar, setToggleSideBar}: Props) => {
                 <AvatarImage src="https://github.com/shadcn.png" alt="avatar" />
                 <AvatarFallback>CN</AvatarFallback>
               </Avatar>
-              <h1 className="text-2xl font-bold">Admin</h1>
+              <h1 className="text-2xl font-bold">Student</h1>
             </div>
             <ul className="w-60 pt-10 text-[#959190]">
-              <Link href="/dashboard/admin/account">
+              <Link href="/dashboard/student/account">
                 <li
                   className={
-                    route === "/dashboard/admin/account"
+                    route === "/dashboard/student/account"
                       ? "bg-[#1C1C1C0D] py-3 pl-10 text-white"
                       : "my-1 py-3 pl-10 hover:bg-[#1C1C1C0D] hover:text-[#1C1C1C] rounded-xl"
                   }
@@ -106,15 +106,15 @@ const DashboardNav = ({page, toggleSideBar, setToggleSideBar}: Props) => {
                       <span className="mr-3">
                         <PieChart size="20" />
                       </span>
-                      Home
+                      Dashboard
                     </div>
                   </li>
               </Link>
 
-              <Link href="/dashboard/admin/courses">
+              <Link href="/dashboard/dashboard/courses">
                 <li
                   className={
-                    route === "/dashboard/admin/courses"
+                    route === "/dashboard/student/courses"
                       ? "bg-[#1C1C1C0D] py-3 pl-10 text-white"
                       : "my-1 py-3 pl-10 hover:bg-[#1C1C1C0D] hover:text-[#1C1C1C] rounded-xl"
                   }
@@ -124,15 +124,15 @@ const DashboardNav = ({page, toggleSideBar, setToggleSideBar}: Props) => {
                     <span className="mr-3">
                       <BookOpen size="20" />
                     </span>
-                    Courses
+                    Course(s)
                   </div>
                 </li>
               </Link>
 
-              <Link href="/dashboard/admin/subscription-plans">
+              <Link href="/dashboard/student/shoppers">
                 <li
                   className={
-                    route === "/dashboard/admin/subscription-plans"
+                    route === "/dashboard/student/shoppers"
                       ? "bg-[#1C1C1C0D] py-3 pl-10 text-white"
                       : "my-1 py-3 pl-10 hover:bg-[#1C1C1C0D] hover:text-[#1C1C1C] rounded-xl"
                   }
@@ -142,15 +142,15 @@ const DashboardNav = ({page, toggleSideBar, setToggleSideBar}: Props) => {
                     <span className="mr-3">
                       <BookText size="20" />
                     </span>
-                    Subscription Plans
+                    Shoppers
                   </div>
                 </li>
               </Link>
 
-              <Link href="/dashboard/admin/transactions">
+              <Link href="/dashboard/student/curriculum">
                 <li
                   className={
-                    route === "/dashboard/admin/transactions"
+                    route === "/dashboard/student/curriculum"
                       ? "bg-[#1C1C1C0D] py-3 pl-10 text-white"
                       : "my-1 py-3 pl-10 hover:bg-[#1C1C1C0D] hover:text-[#1C1C1C] rounded-xl"
                   }
@@ -160,15 +160,15 @@ const DashboardNav = ({page, toggleSideBar, setToggleSideBar}: Props) => {
                     <span className="mr-3">
                       <BookText size="20" />
                     </span>
-                    Transactions
+                    Curriculum
                   </div>
                 </li>
               </Link>
 
-              <Link href="/dashboard/admin/tutors">
+              <Link href="/dashboard/student/chat-forum">
                 <li
                   className={
-                    route === "/dashboard/admin/tutors"
+                    route === "/dashboard/student/chat-forum"
                       ? "bg-[#1C1C1C0D] py-3 pl-10 text-white"
                       : "my-1 py-3 pl-10 hover:bg-[#1C1C1C0D] hover:text-[#1C1C1C] rounded-xl"
                   }
@@ -178,15 +178,15 @@ const DashboardNav = ({page, toggleSideBar, setToggleSideBar}: Props) => {
                     <span className="mr-3">
                       <ShoppingBag size="20" />
                     </span>
-                    Tutors
+                    Chat Forum
                   </div>
                 </li>
               </Link>
 
-              <Link href="/dashboard/admin/students">
+              <Link href="/dashboard/student/transactions">
                 <li
                   className={
-                    route === "/dashboard/admin/students"
+                    route === "/dashboard/student/transactions"
                       ? "bg-[#1C1C1C0D] py-3 pl-10 text-white"
                       : "my-1 py-3 pl-10 hover:bg-[#1C1C1C0D] hover:text-[#1C1C1C] rounded-xl"
                   }
@@ -196,15 +196,15 @@ const DashboardNav = ({page, toggleSideBar, setToggleSideBar}: Props) => {
                     <span className="mr-3">
                       <Users size="20" />
                     </span>
-                    Students
+                    Transactions
                   </div>
                 </li>
               </Link>
 
-              <Link href="/dashboard/admin/assignments">
+              <Link href="/dashboard/student/subscription-plans">
                 <li
                   className={
-                    route === "/dashboard/admin/assignments"
+                    route === "/dashboard/student/subscription-plans"
                       ? "bg-[#1C1C1C0D] py-3 pl-10 text-white"
                       : "my-1 py-3 pl-10 hover:bg-[#1C1C1C0D] hover:text-[#1C1C1C] rounded-xl"
                   }
@@ -214,15 +214,15 @@ const DashboardNav = ({page, toggleSideBar, setToggleSideBar}: Props) => {
                     <span className="mr-3">
                       <MessageCircle size="20" />
                     </span>
-                    Assignments
+                    Subscription Plans
                   </div>
                 </li>
               </Link>
 
-              <Link href="/dashboard/admin/chat-forum">
+              <Link href="/dashboard/student/support">
                 <li
                   className={
-                    route === "/dashboard/admin/chat-forum"
+                    route === "/dashboard/student/support"
                       ? "bg-[#1C1C1C0D] py-3 pl-10 text-white"
                       : "my-1 py-3 pl-10 hover:bg-[#1C1C1C0D] hover:text-[#1C1C1C] rounded-xl"
                   }
@@ -231,35 +231,24 @@ const DashboardNav = ({page, toggleSideBar, setToggleSideBar}: Props) => {
                   <div className="flex items-center">
                     <span className="mr-3">
                       <MessageCircle size="20" />
-                    </span>
-                    Chat Forum
-                  </div>
-                </li>
-              </Link>
-
-              <Link href="/dashboard/admin/support">
-                <li
-                  className={
-                    route === "/dashboard/admin/support"
-                      ? "bg-[#1C1C1C0D] py-3 pl-10 text-white"
-                      : "my-1 py-3 pl-10 hover:bg-[#1C1C1C0D] hover:text-[#1C1C1C] rounded-xl"
-                  }
-                  onClick={() => setToggleSideBar(false)}
-                >
-                  <div className="flex items-center">
-                    <span className="mr-3">
-                      <UserCircle size="20" />
                     </span>
                     Support
                   </div>
                 </li>
               </Link>
+
             </ul>
 
             <div
-                className="fixed bottom-10 pl-10 text-[#959190]"
+                className="fixed bottom-10 pl-10 flex flex-col items-center space-y-4 text-[#959190]"
                 style={{ cursor: "pointer" }}
               >
+                <div className="flex items-center">
+                  <span className="mr-3">
+                    <UserCircle size="20" />
+                  </span>
+                  Tutorial
+                </div>
                 <div className="flex items-center" onClick={handleLogout}>
                   <span className="mr-3">
                     <LogOut size="20" color="#D2322D" />

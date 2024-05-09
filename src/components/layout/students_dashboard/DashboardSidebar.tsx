@@ -183,9 +183,15 @@ const DashboardSidebar = ({ children }: DashboardSidebarProps) => {
             </ul>
             {/* </nav> */}
             <div
-              className="fixed bottom-10 pl-10 text-[#959190]"
+              className="fixed bottom-10 pl-10 flex flex-col items-center space-y-4 text-[#959190]"
               style={{ cursor: "pointer" }}
             >
+              <div className="flex items-center">
+                <span className="mr-3">
+                  <UserCircle size="20" />
+                </span>
+                Tutorial
+              </div>
               <div
                 className="flex items-center text-[#D06B0D]"
                 onClick={handleLogout}

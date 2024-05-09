@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { NextPageWithLayout } from '@/pages/_app';
 import DashboardSidebar from '@/components/layout/dashboard/DashboardSidebar';
 import DashboardLayout from '@/components/layout/dashboard/DashboardLayout';
-import CoursesHeaderTab from '@/components/tabs/CoursesHeaderTab';
+import CoursesHeaderTab from '@/components/tabs/admin_dashboard/CoursesHeaderTab';
 import freecourses from '@/data/freeCourses.json';
 import { EllipsisVertical, Plus } from 'lucide-react';
 import EditModal from '@/components/modal/courses/free-courses/EditModal';
