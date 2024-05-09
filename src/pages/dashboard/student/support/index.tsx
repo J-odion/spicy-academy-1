@@ -57,7 +57,7 @@ const Support: NextPageWithLayout = () => {
         </div>
         <div className="w-full lg:w-1/2 bg-[#F4C991] py-6 px-8 mt-8 lg:mt-8">
           <p className="pb-4 text-[#1E1E1E] text-lg font-medium w-[20ch]">
-            Can't find your answers? Report your complaints
+            Can&apos;t find your answers? Report your complaints
           </p>
           <form
             onSubmit={handleSubmit(onSubmit)}
