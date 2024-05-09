@@ -50,7 +50,7 @@ const PaginationLink = ({
     className={cn(
       buttonVariants({
         variant: isActive ? "outline" : "ghost",
-        className: isActive ? "bg-[#A85334]" : "bg-transparent",
+        className: isActive ? "bg-[#A85334] text-white" : "bg-transparent text-[#A098AE]",
         size,
       }),
       className
@@ -70,7 +70,7 @@ const PaginationPrevious = ({
     className={cn("gap-1 pl-2.5", className)}
     {...props}
   >
-    <ChevronLeft className="h-4 w-4" />
+    <ChevronLeft className="h-4 w-4 text-[#D06B0D]" />
     {/* <span>Previous</span> */}
   </PaginationLink>
 )
@@ -87,7 +87,7 @@ const PaginationNext = ({
     {...props}
   >
     {/* <span>Next</span> */}
-    <ChevronRight className="h-4 w-4" />
+    <ChevronRight className="h-4 w-4 text-[#D06B0D]" />
   </PaginationLink>
 )
 PaginationNext.displayName = "PaginationNext"

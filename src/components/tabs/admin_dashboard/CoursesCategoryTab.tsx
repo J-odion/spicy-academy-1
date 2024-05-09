@@ -45,7 +45,7 @@ const CoursesCategoryTab = ({currentTab='beginner'}: CategoryCoursesProps) => {
           </li>
         </Link>
       </ul>
-      <hr className="border-slate-500" />
+      <hr className="border-[#F0EAE8] border-b-[1px]" />
     </div>
   )
 }

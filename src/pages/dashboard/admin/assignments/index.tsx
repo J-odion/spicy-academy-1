@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import { NextPageWithLayout } from '@/pages/_app';
 import DashboardSidebar from '@/components/layout/dashboard/DashboardSidebar';
 import DashboardLayout from '@/components/layout/dashboard/DashboardLayout';
-import AssignmentsHeaderTab from '@/components/tabs/AssignmentsHeaderTab';
+import AssignmentsHeaderTab from '@/components/tabs/admin_dashboard/AssignmentsHeaderTab';
 import assignments from '@/data/assignments.json';
 import { Table, TableHeader, TableHead, TableBody, TableCell, TableRow } from "@/components/ui/table";
 import { Button } from '@/components/ui/button';

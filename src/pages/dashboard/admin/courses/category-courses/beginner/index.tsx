@@ -3,7 +3,7 @@ import { NextPageWithLayout } from '@/pages/_app';
 import { Button } from '@/components/ui/button';
 import DashboardSidebar from '@/components/layout/dashboard/DashboardSidebar';
 import DashboardLayout from '@/components/layout/dashboard/DashboardLayout';
-import CoursesCategoryTab from '@/components/tabs/CoursesCategoryTab';
+import CoursesCategoryTab from '@/components/tabs/admin_dashboard/CoursesCategoryTab';
 import { Plus } from 'lucide-react';
 import { useRouter } from 'next/router';
 import categories from '@/data/categories.json';

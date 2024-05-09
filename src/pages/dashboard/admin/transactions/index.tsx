@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import DashboardLayout from '@/components/layout/dashboard/DashboardLayout';
 import { NextPageWithLayout } from '@/pages/_app';
 import DashboardSidebar from '@/components/layout/dashboard/DashboardSidebar';
-import TransactionHeaderTab from '@/components/tabs/TransactionHeaderTab';
+import TransactionHeaderTab from '@/components/tabs/admin_dashboard/TransactionHeaderTab';
 import { Table, TableHeader, TableHead, TableBody, TableCell, TableRow } from "@/components/ui/table";
 import Moment from 'react-moment';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
