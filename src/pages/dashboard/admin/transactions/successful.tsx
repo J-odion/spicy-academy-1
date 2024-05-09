@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import DashboardLayout from '@/components/layout/dashboard/DashboardLayout';
-import DashboardSidebar from '@/components/layout/dashboard/DashboardSidebar';
+import DashboardLayout from '@/components/layout/admin_dashboard/DashboardLayout';
+import DashboardSidebar from '@/components/layout/admin_dashboard/DashboardSidebar';
 import TransactionHeaderTab from '@/components/tabs/admin_dashboard/TransactionHeaderTab';
 import { Table, TableHeader, TableHead, TableBody, TableCell, TableRow } from "@/components/ui/table";
 import Moment from 'react-moment';

@@ -51,7 +51,7 @@ const DashboardNav = ({page, toggleSideBar, setToggleSideBar}: Props) => {
       <nav className="fixed top-0 z-40 lg:ml-72 w-full px-5 py-6 bg-white text-black md:px-10 lg:py-4 border-b">
         <div className="flex items-center justify-between">
           <div>
-            <h1 className="text-2xl capitalize font-bold">{page}</h1>
+            <h1 className="text-sm font-normal capitalize text-[#1C1C1C66]">{page}</h1>
           </div>
           <div className="flex items-center space-x-4">
             <div className="hidden lg:flex">
