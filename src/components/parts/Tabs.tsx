@@ -46,10 +46,10 @@ export function TabsDisplay() {
             </p>
       </TabsContent>
       <TabsContent value="songwriter">
-      <p>I started Spicy Guitar Academy in 2016 - but began teaching way before that.
+      <p>I started writing songs back in the day - but began teaching way before that.
                 I carefully design my courses to help you make the best out of your guitar time! 
                 My lessons feel like private lessons and are just as effective. 
-                Some of them are free. Teaching the world how to play guitar is what I'll do forever.
+                Some of them are free.
             </p>
       </TabsContent>
       <TabsContent value="artist">
@@ -60,8 +60,7 @@ export function TabsDisplay() {
             </p>
       </TabsContent>
       <TabsContent value="family-man">
-      <p>I started Spicy Guitar Academy in 2016 - but began teaching way before that.
-                I carefully design my courses to help you make the best out of your guitar time! 
+      <p>I am a family man first before a masdfad. 
                 My lessons feel like private lessons and are just as effective. 
                 Some of them are free. Teaching the world how to play guitar is what I'll do forever.
             </p>

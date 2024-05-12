@@ -16,7 +16,9 @@ export default function Home() {
     <main
       className={`flex min-h-screen flex-col items-center justify-between  ${inter.className}`}
     >
+      <div className="w-full absolute ">
       <Headers />
+      </div>
       <div
         className=" w-full h-[80vh] mb-10 bg-center bg-cover bg-no-repeat "
         style={{ backgroundImage: "url('/bghe.svg')" }}
@@ -74,22 +76,22 @@ export default function Home() {
       </section>
 
       <section className="flex my-[30px] flex-col w-full items-center justify-center gap-12 align-middle h-[100%]">
-        <h1 className="text-black text-bold text-center text-2xl font-bold tracking-wide leading-6 lg:text-3xl">
+        <h1 className="text-black top-5 text-bold text-center text-2xl font-bold tracking-wide leading-6 lg:text-3xl">
           OUR MISSION
         </h1>
 
         <div className="bg-[#2B1108] flex flex-col w-full py-[50px] px-[100px]">
-          <div className="flex w-full justify-between align-top ">
+          <div className="flex w-full justify-around align-top ">
             <div className="flex flex-col justify-center gap-5 h-[160px] ">
-              <p className=" capitalize text-[12px] tracking-wider font-bold text-white">
+              <p className=" capitalize text-[16px] tracking-wider font-bold text-white">
                 Spicy Guitar Academy Is Aimed At Guiding <br /> Beginners To
                 Fulfill Their Dream Of <br />
                 Becoming Professional Guitar Players.
               </p>
-              <p className="text-[#D1831F] text-[10px] font-semibold ">
+              <p className="text-[#D1831F] text-[14px] font-semibold ">
                 - Guitarism, Igniting Creativity.
               </p>
-              <Button className="bg-brown h-[35px] w-[auto] rounded-2xl p-[15px] text-[14px] items-center justify-center">
+              <Button className="bg-brown h-[35px] w-[auto] rounded-2xl p-[15px] text-[16px] items-center justify-center">
                 Create Account
               </Button>
             </div>
@@ -180,8 +182,12 @@ export default function Home() {
             <div className="w-[45%]">
               <p className=" text-2xl text-bolder ">
                 You're <span className="text-[#F7B500]"> never alone </span>on
-                your<br/>  guitar journey. Our dedicated <br/>  team of instructors is on<br/> 
-                standby to help you overcome<br/>  trouble spots.
+                your
+                <br /> guitar journey. Our dedicated <br /> team of instructors
+                is on
+                <br />
+                standby to help you overcome
+                <br /> trouble spots.
               </p>
             </div>
             <div className="w-[45%]">
@@ -203,13 +209,16 @@ export default function Home() {
       <section className="flex my-[30px] p-20 flex-col w-full items-center justify-center gap-12 align-middle h-[100%]">
         <div className="w-[80%]">
           <h2 className="text-black text-bold mb-10 text-center text-2xl font-bold tracking-wide leading-6 lg:text-3xl">
-          <span className="mr-5 ">Lessons For</span>
+            <span className="mr-5 ">Lessons For</span>
             <span className="bg-[#2B1108] text-white px-3 py-2 rounded-2xl">
-            All Skill Levels
+              All Skill Levels
             </span>
           </h2>
           <div className="flex justify-between w-full ">
-            <div style={{ backgroundImage: "url('/bghe.svg')" }} className="bg-[#7A402C] bg-[rgba(0,0,0,0.8)] flex flex-col items-right p-4 text-white justify-center bg-center bg-cover bg-no-repeat w-[240px] h-[140px]">
+            <div
+              style={{ backgroundImage: "url('/bghe.svg')" }}
+              className="bg-[#7A402C] bg-[rgba(0,0,0,0.8)] flex flex-col items-right p-4 text-white justify-center bg-center bg-cover bg-no-repeat w-[240px] h-[140px]"
+            >
               <p>Level</p>
               <h4>BEGINNER</h4>
             </div>
@@ -229,8 +238,6 @@ export default function Home() {
         </div>
       </section>
 
-      
-
       <section className="flex bg-[#F0EAE8] my-[30px] p-20 flex-col w-full items-center justify-center gap-12 align-middle h-[100%]">
         <div className="flex gap-6 flex-col w-[90%]">
           <h2 className="text-[#401A0C] text-bold text-left text-[24px] font-bold tracking-wide leading-6 lg:text-3xl">
@@ -238,16 +245,18 @@ export default function Home() {
           </h2>
           <div className="flex items-center justify-center gap-10">
             <div>
-            <Image
-              className=" flex-1 h-[180px] w-[180px] rounded-full items-center"
-              src="/bghero.png"
-              width={500}
-              height={500}
-              alt="your guitar struggles"
-            />
+              <Image
+                className=" flex-1 h-[180px] w-[180px] rounded-full items-center"
+                src="/bghero.png"
+                width={500}
+                height={500}
+                alt="your guitar struggles"
+              />
             </div>
             <div className="flex flex-col items-left justify-center  gap-8 w-[70%] ">
-              <h3 className="text-[#401A0C] font-bold text-[24px] ">Ifiok Isaiah</h3>
+              <h3 className="text-[#401A0C] font-bold text-[24px] ">
+                Ifiok Isaiah
+              </h3>
               <p className="text-[#401A0C] text-[20px] ">
                 Spicy Guitar Academy Is A Great Learning Hub For Any Guitarist
                 That Want To Get On Top Of His/Her Craft. Whether You're A
@@ -262,21 +271,31 @@ export default function Home() {
 
       <section>
         <div className="flex flex-col justify-center items-center py-[50px] gap-9">
-          <h2 className="text-[#401A0C] text-[20px] font-bold text-center ">ABOUT OC OMOFUMA</h2>
+          <h2 className="text-[#401A0C] text-[20px] font-bold text-center ">
+            ABOUT OC OMOFUMA
+          </h2>
 
           <div className="flex  items-center justify-center">
-          <TabsDisplay />
+            <TabsDisplay />
           </div>
 
           <div className="flex justify-center gap-x-16 items-center ">
-          <div className="flex flex-col ">
-            <p className="text-[#401A0C] text-[20px] font-bold text-center ">8 YEARS</p>
-            <p className="text-[#401A0C] text-[20px] font-bold text-center ">Of Online Lessons</p>
-          </div>
-          <div className="flex flex-col ">
-            <p className="text-[#401A0C] text-[20px] font-bold text-center ">26+ YEARS</p>
-            <p className="text-[#401A0C] text-[20px] font-bold text-center ">Teaching Guitar</p>
-          </div>
+            <div className="flex flex-col ">
+              <p className="text-[#401A0C] text-[20px] font-bold text-center ">
+                8 YEARS
+              </p>
+              <p className="text-[#401A0C] text-[20px] font-bold text-center ">
+                Of Online Lessons
+              </p>
+            </div>
+            <div className="flex flex-col ">
+              <p className="text-[#401A0C] text-[20px] font-bold text-center ">
+                26+ YEARS
+              </p>
+              <p className="text-[#401A0C] text-[20px] font-bold text-center ">
+                Teaching Guitar
+              </p>
+            </div>
           </div>
         </div>
       </section>
