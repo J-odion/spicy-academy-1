@@ -1,7 +1,6 @@
 import React from 'react'
 import { Dialog, DialogHeader, DialogTitle, DialogContent } from "@/components/ui/dialog";
 import { Button } from '@/components/ui/button';
-import { ThumbsUp } from 'lucide-react';
 import { useRouter } from 'next/router';
 import verify from '/public/images/verify.svg';
 import Image from 'next/image';
