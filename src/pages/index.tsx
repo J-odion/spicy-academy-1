@@ -233,16 +233,7 @@ export default function Home() {
           <h2 className="text-black text-bold text-center text-2xl font-bold tracking-wide leading-6 lg:text-3xl">
             Students success stories
           </h2>
-          <div>
-            <Image
-              className=" flex-1 h-[60px] w-[auto] "
-              src="/struggles.svg"
-              width={500}
-              height={100}
-              alt="your guitar struggles"
-            />
-            
-          </div>
+          
         </div>
       </section>
 
