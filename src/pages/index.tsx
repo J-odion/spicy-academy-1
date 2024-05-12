@@ -7,6 +7,7 @@ import Headers from "@/components/parts/Headers";
 import { SPGCarousel } from "@/components/parts/Carousel";
 import { FaYoutube } from "react-icons/fa";
 import Footer from "@/components/parts/Footer";
+import { TabsDisplay } from "@/components/parts/Tabs";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -208,7 +209,7 @@ export default function Home() {
             </span>
           </h2>
           <div className="flex justify-between w-full ">
-            <div className="bg-[#7A402C] flex flex-col items-right p-4 text-white justify-center  w-[240px] h-[140px]">
+            <div style={{ backgroundImage: "url('/bghe.svg')" }} className="bg-[#7A402C] bg-[rgba(0,0,0,0.8)] flex flex-col items-right p-4 text-white justify-center bg-center bg-cover bg-no-repeat w-[240px] h-[140px]">
               <p>Level</p>
               <h4>BEGINNER</h4>
             </div>
@@ -228,22 +229,26 @@ export default function Home() {
         </div>
       </section>
 
+      
+
       <section className="flex bg-[#F0EAE8] my-[30px] p-20 flex-col w-full items-center justify-center gap-12 align-middle h-[100%]">
-        <div>
-          <h2 className="text-black text-bold text-center text-2xl font-bold tracking-wide leading-6 lg:text-3xl">
+        <div className="flex gap-6 flex-col w-[90%]">
+          <h2 className="text-[#401A0C] text-bold text-left text-[24px] font-bold tracking-wide leading-6 lg:text-3xl">
             Students success stories
           </h2>
-          <div>
+          <div className="flex items-center justify-center gap-10">
+            <div>
             <Image
-              className=" flex-1 h-[60px] w-[auto] "
-              src="/struggles.svg"
+              className=" flex-1 h-[180px] w-[180px] rounded-full items-center"
+              src="/bghero.png"
               width={500}
-              height={100}
+              height={500}
               alt="your guitar struggles"
             />
-            <div>
-              <h3>Ifiok Isaiah</h3>
-              <p>
+            </div>
+            <div className="flex flex-col items-left justify-center  gap-8 w-[70%] ">
+              <h3 className="text-[#401A0C] font-bold text-[24px] ">Ifiok Isaiah</h3>
+              <p className="text-[#401A0C] text-[20px] ">
                 Spicy Guitar Academy Is A Great Learning Hub For Any Guitarist
                 That Want To Get On Top Of His/Her Craft. Whether You're A
                 Beginner, Amateur Or Advance Guitar Player, The Academy Will
@@ -251,6 +256,27 @@ export default function Home() {
                 Advanced Level.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div className="flex flex-col justify-center items-center py-[50px] gap-9">
+          <h2 className="text-[#401A0C] text-[20px] font-bold text-center ">ABOUT OC OMOFUMA</h2>
+
+          <div className="flex  items-center justify-center">
+          <TabsDisplay />
+          </div>
+
+          <div className="flex justify-center gap-x-16 items-center ">
+          <div className="flex flex-col ">
+            <p className="text-[#401A0C] text-[20px] font-bold text-center ">8 YEARS</p>
+            <p className="text-[#401A0C] text-[20px] font-bold text-center ">Of Online Lessons</p>
+          </div>
+          <div className="flex flex-col ">
+            <p className="text-[#401A0C] text-[20px] font-bold text-center ">26+ YEARS</p>
+            <p className="text-[#401A0C] text-[20px] font-bold text-center ">Teaching Guitar</p>
+          </div>
           </div>
         </div>
       </section>
