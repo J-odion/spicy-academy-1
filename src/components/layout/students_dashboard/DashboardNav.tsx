@@ -6,6 +6,7 @@ import NotificationModal from './NotificationModal'
 import { Skeleton } from '@/components/ui/skeleton'
 import Link from 'next/link'
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar'
+import LogoutModal from '@/components/modal/student_dashboard/LogoutModal'
 
 
 const notifications = {
@@ -36,12 +37,18 @@ type Props = {
 
 
 const DashboardNav = ({page, toggleSideBar, setToggleSideBar}: Props) => {
-  const router = useRouter();
+  // const router = useRouter();
   const { route } = useRouter();
 
-  const handleLogout = () => {
-    router.push("/");
-  }
+  const [open, setOpen] = useState(false);
+
+  const handleLogoutModal = () => {
+    setOpen(!open);
+}
+
+  // const handleLogout = () => {
+  //   router.push("/");
+  // }
 
   const handleToggleSidebar = () => setToggleSideBar(!toggleSideBar);
 
@@ -249,7 +256,7 @@ const DashboardNav = ({page, toggleSideBar, setToggleSideBar}: Props) => {
                   </span>
                   Tutorial
                 </div>
-                <div className="flex items-center" onClick={handleLogout}>
+                <div className="flex items-center" onClick={handleLogoutModal}>
                   <span className="mr-3">
                     <LogOut size="20" color="#D2322D" />
                   </span>
@@ -259,6 +266,7 @@ const DashboardNav = ({page, toggleSideBar, setToggleSideBar}: Props) => {
           </div>
         )}
       </aside>
+      <LogoutModal open={open} setOpen={setOpen} title="Are you sure you want to logout?" />
     </>
   )
 }

@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import {
   PieChart,
   ChevronRight,
@@ -14,6 +14,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import LogoutModal from "@/components/modal/student_dashboard/LogoutModal";
 
 // ill use this for the avatar
 
@@ -22,12 +23,18 @@ type DashboardSidebarProps = React.PropsWithChildren & {
 };
 
 const DashboardSidebar = ({ children }: DashboardSidebarProps) => {
-  const router = useRouter();
+  const [open, setOpen] = useState(false);
+
+  // const router = useRouter();
   const { route } = useRouter();
 
-  const handleLogout = () => {
-    router.push("/auth/login");
-  };
+  // const handleLogout = () => {
+  //   router.push("/auth/login");
+  // };
+
+  const handleLogoutModal = () => {
+    setOpen(!open);
+}
 
   return (
     <>
@@ -36,10 +43,12 @@ const DashboardSidebar = ({ children }: DashboardSidebarProps) => {
 
           <div>
             <div className="flex items-center gap-3 justify-center h-20">
-              <Avatar>
-                <AvatarImage src="https://github.com/shadcn.png" alt="avatar" />
-                <AvatarFallback>CN</AvatarFallback>
-              </Avatar>
+            <Link href='/dashboard/student/account/profile'>
+                <Avatar>
+                  <AvatarImage src="https://github.com/shadcn.png" alt="avatar" />
+                  <AvatarFallback>CN</AvatarFallback>
+                </Avatar>
+              </Link>
               <h1 className="text-2xl font-bold">Student</h1>
             </div>
             {/* <nav className="flex-grow"> */}
@@ -194,7 +203,7 @@ const DashboardSidebar = ({ children }: DashboardSidebarProps) => {
               </div>
               <div
                 className="flex items-center text-[#D06B0D]"
-                onClick={handleLogout}
+                onClick={handleLogoutModal}
               >
                 <span className="mr-3">
                   <LogOut size="20" color="#D06B0D" />
@@ -211,6 +220,8 @@ const DashboardSidebar = ({ children }: DashboardSidebarProps) => {
           {children}
         </div>
       </aside>
+
+      <LogoutModal open={open} setOpen={setOpen} title="Are you sure you want to logout?" />
     </>
   );
 };
