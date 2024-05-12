@@ -1,66 +1,86 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
 import {
-    Menubar,
-    MenubarContent,
-    MenubarMenu,
-    MenubarSeparator,
-    MenubarTrigger
+  Menubar,
+  MenubarContent,
+  MenubarMenu,
+  MenubarSeparator,
+  MenubarTrigger,
 } from "@/components/ui/menubar";
-import { Bell, BellOff, Loader2Icon, MailOpen, Trash2 } from 'lucide-react';
-import Moment from 'react-moment';
+import {
+  Bell,
+  BellOff,
+  Loader2Icon,
+  MailOpen,
+  Trash2,
+  BookOpen,
+} from "lucide-react";
+import Moment from "react-moment";
+import { Button } from "@/components/ui/button";
 
 type NotificationModalProps = {
-    notifications: any;
-    notificationRefetch: any;
-  };
+  notifications: any;
+  notificationRefetch: any;
+};
 
+const handleReadNotification = (id: number) => {
+  console.log(id);
+};
 
-  const handleReadNotification = (id: number) => {
-    console.log(id);
-  }
+const handleDeleteNotification = (id: number) => {
+  console.log(id);
+};
 
-    const handleDeleteNotification = (id: number) => {
-        console.log(id);
-    }
-
-  const NotificationModal = ({notifications, notificationRefetch
-  }: NotificationModalProps) => {
-
-    const [loadingStates, setLoadingStates] = useState<any>({});
-    const [deletingState, setDeletingState] = useState<any>({});
-
+const NotificationModal = ({
+  notifications,
+  notificationRefetch,
+}: NotificationModalProps) => {
+  const [loadingStates, setLoadingStates] = useState<any>({});
+  const [deletingState, setDeletingState] = useState<any>({});
 
   return (
     <>
-        <Menubar>
-            <MenubarMenu>
-                <MenubarTrigger>
-                    <div className="relative cursor-pointer">
-                        {notifications?.count > 0 && (
-                        <span className="absolute right-[1px] top-[-2px] flex h-3 w-3 items-center justify-center rounded-full bg-red-700 text-white">
-                        </span>
-                    )}{" "}
-                        <Bell />
-                    </div>
-                </MenubarTrigger>
-                <MenubarContent className="h-80 overflow-y-auto" id="menu-content">
-                {" "}
+      <Menubar>
+        <MenubarMenu>
+          <MenubarTrigger>
+            <div className="relative cursor-pointer">
+              {notifications?.count > 0 && (
+                <span className="absolute right-[1px] top-[-2px] flex h-3 w-3 items-center justify-center rounded-full bg-red-700 text-white"></span>
+              )}{" "}
+              <Bell />
+            </div>
+          </MenubarTrigger>
+          <MenubarContent
+            className="h-screen w-[600px] overflow-y-auto"
+            id="menu-content"
+          >
+            {" "}
             <div className="flex items-center justify-between">
-              <h5 className="mr-2 text-xl">Notifications</h5>
+              <h2 className="mr-2 text-xl">Notification</h2>
+              <Button variant={"link"} className="text-[#A85334]">
+                View all
+              </Button>
             </div>
             <MenubarSeparator />
             <div className="">
               {notifications?.count > 0 ? (
                 <>
                   {notifications?.results?.map((item: any, index: number) => (
-                    <div className="py-4" key={index}>
-                      <div className="border-b-2 py-2">
-                        <div className="flex items-center justify-start text-xs">
-                          {!item?.is_read && (
-                            <span className="mr-1 h-2 w-2  rounded-full bg-ectypeBlue" />
-                          )}
-                          {item?.message}
-                          <div className="ml-14 flex justify-end">
+                    <div className="" key={index}>
+                      <div className="border-b-2 px-4 py-1 bg-[#FDF4E9] border-[1px] border-[#F0EAE8]">
+                        <div className="flex items-center justify-between text-xs">
+                          <div className="text-[#4F4F4F] font-normal text-sm">
+                            {!item?.is_read && (
+                              <span className="mr-1 h-2 w-2  rounded-full bg-red-500" />
+                            )}
+                            <p className="uppercase">{item?.message}</p>
+                            <p className="">Assessment scores have arrived</p>
+                          </div>
+                          <div className="ml-14 flex justify-end text-sm text-[#1E1E1E99]">
+                          <Moment format="MM D, YYYY | HH:mm " withTitle>
+                            {item?.created_at}
+                          </Moment>
+                        </div>
+                          {/* <div className="ml-14 flex justify-end">
                             <button
                               onClick={() => handleReadNotification(item?.id)}
                               className="cursor-pointer"
@@ -89,13 +109,9 @@ type NotificationModalProps = {
                                 <Trash2 size={14} color="red" />
                               )}
                             </button>
-                          </div>
+                          </div> */}
                         </div>
-                        <span className="text-xs text-gray-600">
-                          <Moment format="DD-MM-YYYY HH:mm:ss A">
-                            {item?.created_at}
-                          </Moment>
-                        </span>
+
                       </div>
                     </div>
                   ))}
@@ -111,11 +127,11 @@ type NotificationModalProps = {
                 </div>
               )}
             </div>
-                </MenubarContent>
-            </MenubarMenu>
-        </Menubar>
+          </MenubarContent>
+        </MenubarMenu>
+      </Menubar>
     </>
-  )
-}
+  );
+};
 
-export default NotificationModal
+export default NotificationModal;
