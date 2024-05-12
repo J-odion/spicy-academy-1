@@ -93,10 +93,12 @@ const DashboardNav = ({page, toggleSideBar, setToggleSideBar}: Props) => {
         {toggleSideBar && (
           <div className='flex flex-col pt-4 '>
             <div className="flex items-center gap-3 justify-center h-20">
-              <Avatar>
-                <AvatarImage src="https://github.com/shadcn.png" alt="avatar" />
-                <AvatarFallback>CN</AvatarFallback>
-              </Avatar>
+            <Link href='/dashboard/student/account/profile'>
+                <Avatar>
+                  <AvatarImage src="https://github.com/shadcn.png" alt="avatar" />
+                  <AvatarFallback>CN</AvatarFallback>
+                </Avatar>
+              </Link>
               <h1 className="text-2xl font-bold">Student</h1>
             </div>
             <ul className="w-60 pt-10 text-[#959190]">
