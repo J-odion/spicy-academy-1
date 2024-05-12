@@ -241,16 +241,7 @@ export default function Home() {
               height={100}
               alt="your guitar struggles"
             />
-            <div>
-              <h3>Ifiok Isaiah</h3>
-              <p>
-                Spicy Guitar Academy Is A Great Learning Hub For Any Guitarist
-                That Want To Get On Top Of His/Her Craft. Whether You're A
-                Beginner, Amateur Or Advance Guitar Player, The Academy Will
-                Teach You To Grow From Any Of These Categories To A More
-                Advanced Level.
-              </p>
-            </div>
+            
           </div>
         </div>
       </section>
