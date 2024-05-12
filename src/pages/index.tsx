@@ -75,8 +75,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex my-[30px] flex-col w-full items-center justify-center gap-12 align-middle h-[100%]">
-        <h1 className="text-black top-5 text-bold text-center text-2xl font-bold tracking-wide leading-6 lg:text-3xl">
+      <section className="flex mt-[150px] mb-[30px] flex-col w-full items-center justify-center gap-12 align-middle h-[100%]">
+        <h1 className="text-black mb-14 text-bold text-center text-2xl font-bold tracking-wide leading-6 lg:text-3xl">
           OUR MISSION
         </h1>
 
@@ -95,9 +95,9 @@ export default function Home() {
                 Create Account
               </Button>
             </div>
-            <div className="flex flex-col justify-between gap-5 relative top-[-130px]">
+            <div className="flex flex-col justify-between gap-5 relative top-[-180px]">
               <Image
-                className="h-[400px] w-[auto] "
+                className=" contain h-[auto] w-[450px] "
                 src="/mobile.png"
                 width={500}
                 height={100}
