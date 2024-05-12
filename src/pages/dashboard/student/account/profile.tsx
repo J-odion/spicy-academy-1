@@ -14,10 +14,12 @@ import { Input } from '@/components/ui/input'
 import { ChevronRight } from 'lucide-react'
 import ChangePasswordModal from '@/components/modal/student_dashboard/ChangePasswordModal'
 import DeleteAccountModal from '@/components/modal/student_dashboard/DeleteAccountModal'
+import AccountDeletedModal from '@/components/modal/student_dashboard/AccountDeletedModal'
 
 const Profile: NextPageWithLayout = () => {
 
     const [open, setOpen] = useState(false);
+    const [openDeletedModal, setOpenDeletedModal] = useState(false)
     const [openDelete, setOpenDelete] = useState(false);
 
 
@@ -95,6 +97,7 @@ const Profile: NextPageWithLayout = () => {
       </div>
         <ChangePasswordModal open={open} setOpen={setOpen} title='Change Password' />
         <DeleteAccountModal open={openDelete} setOpen={setOpenDelete} title='Are you sure you want to delete your account' />
+        <AccountDeletedModal open={openDeletedModal} setOpen={setOpenDeletedModal} />
     </DashboardSidebar>
   )
 }

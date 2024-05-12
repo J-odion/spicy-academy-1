@@ -11,7 +11,6 @@ import {
 } from "@/components/ui/dialog";
 import { Textarea } from "@/components/ui/textarea";
 import CustomButton from "@/components/CustomButton";
-import { Input } from "@/components/ui/input";
 import { useForm } from "react-hook-form";
 import { Label } from "@/components/ui/label";
 import { Checkbox } from "@/components/ui/checkbox";
@@ -27,6 +26,7 @@ import {
 import { toast } from "@/components/ui/use-toast";
 import { deleteCheckboxSchema } from "@/lib/formSchema";
 import FormRender from "@/components/FormRender";
+import AccountDeletedModal from "./AccountDeletedModal";
 
 type ModalProps = {
   className?: string;
@@ -72,18 +72,23 @@ const DeleteAccountModal = ({
   });
 
   const [isLoading, setIsLoading] = useState(false);
-  const { register, handleSubmit, reset } = form;
+  const [modalOpen, setModalOpen] = useState(false);
+  const [accountDeleted, setAccountDeleted] = useState(false);
+//   const { register, handleSubmit, reset } = form;
 
-  const onSubmit = (data: z.infer<typeof deleteCheckboxSchema>) => {
+  const onSubmit = async (data: z.infer<typeof deleteCheckboxSchema>) => {
     console.log(data);
     setOpen(false);
-    toast({
-      variant: "default",
-      title: "Account deleted successfully",
-    });
+    setIsLoading(true);
+    // setModalOpen(true);
+    await new Promise(resolve => setTimeout(resolve, 1000));
+
+    setIsLoading(false);
+    setAccountDeleted(true);
   };
 
   return (
+    <>
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogContent className="pb-10 sm:rounded-md bg-[#F0EAE8]">
         <DialogTitle
@@ -185,6 +190,11 @@ const DeleteAccountModal = ({
         </div>
       </DialogContent>
     </Dialog>
+    {accountDeleted && (
+        <AccountDeletedModal open={true} setOpen={setAccountDeleted} />
+      )}
+    </>
+
   );
 };
 
