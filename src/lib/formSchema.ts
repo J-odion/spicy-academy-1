@@ -113,6 +113,12 @@ export const changePasswordSchema = z.object({
     }),
 });
 
+export const deleteCheckboxSchema = z.object({
+  items: z.array(z.string()).refine((value) => value.some((item) => item), {
+    message: "You have to select at least one item.",
+  }),
+})
+
 export const copyFormSchema = z.object({
   lead_id: z.string(),
   follower_id: z.string(),
