@@ -13,13 +13,13 @@ const notifications = {
   results: [
       {
           id: 1,
-          message: "New message from admin",
+          message: "beginners finger exercise",
           is_read: false,
           created_at: "2022-02-02T12:00:00Z",
       },
       {
           id: 2,
-          message: "New message from admin",
+          message: "beginners finger exercise",
           is_read: false,
           created_at: "2022-02-02T12:00:00Z",
       },
@@ -48,7 +48,7 @@ const DashboardNav = ({page, toggleSideBar, setToggleSideBar}: Props) => {
 
   return (
     <>
-      <nav className="fixed top-0 z-40 lg:ml-72 w-full px-5 py-6 bg-white text-black md:px-10 lg:py-4 border-b">
+      <nav className="fixed top-0 z-40 lg:pl-72 w-full px-5 py-6 bg-white text-black md:px-10 lg:py-4 border-b">
         <div className="flex items-center justify-between">
           <div>
             <h1 className="text-sm font-normal capitalize text-[#1C1C1C66]">{page}</h1>
