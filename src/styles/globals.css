@@ -66,6 +66,15 @@ h1, h2, h3, h4, h5, h6 {
   border-color: #856404;
 }
 
+#menu-content {
+  background-color: #F0EAE8;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  scrollbar-width: thin;
+  scrollbar-color: var(--brown) transparent;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.25);
+}
+
 #menu-content::-webkit-scrollbar {
   width: 4px;
 }
