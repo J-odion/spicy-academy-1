@@ -6,34 +6,31 @@ import { BookOpen, BookText, MessageCircle, PieChart, ShoppingBag, UserCircle, U
 type DashboardPages =
   |'dashboard'
   |'courses'
-  |'subscription-plans'
-  |'transactions'
-  |'tutors'
-  |'students'
-  |'assignments'
+  |'shoppers'
+  |'curriculum'
   |'chat-forum'
+  |'transactions'
+  |'subscription-plans'
   |'support';
 
   type DashboardIcons  = {
     dashboard: JSX.Element;
     courses: JSX.Element;
-    'subscription-plans': JSX.Element;
-    transactions: JSX.Element;
-    tutors: JSX.Element;
-    students: JSX.Element;
-    assignments: JSX.Element;
+    shoppers: JSX.Element;
+    curriculum: JSX.Element;
     'chat-forum': JSX.Element;
+    transactions: JSX.Element;
+    'subscription-plans': JSX.Element;
     support: JSX.Element;
   };
 
   export const icons: DashboardIcons = {
     dashboard: <PieChart size="20"/>,
     courses: <BookOpen size="20" />,
+    shoppers: <Users size="20" />,
+    curriculum: <ShoppingBag size="20" />,
     'subscription-plans': <BookText size="20" />,
     transactions: <BookText size="20" />,
-    tutors: <ShoppingBag size="20" />,
-    students: <Users size="20" />,
-    assignments: <MessageCircle size="20" />,
     'chat-forum': <MessageCircle size="20" />,
     support: <UserCircle size="20" />,
   }
@@ -50,20 +47,14 @@ const DashboardLayout = ({ children, page, }: DashboardLayoutProps) => {
 
   return (
     <>
-      <div className="flex h-screen">
+      <div className="relative">
         <DashboardNav
           page={page}
           toggleSideBar={toggleSideBar}
           setToggleSideBar={setToggleSideBar}
          />
-        {/* <main className="absolute top-0 left-64 w-full h-full bg-gray-100 p-8"> */}
           {children}
-        {/* </main> */}
       </div>
-      {/* <div className="flex h-screen">
-        <DashboardNav page={page} />
-        <main className="flex-grow bg-gray-100 p-8">{children}</main>
-      </div> */}
     </>
   )
 }

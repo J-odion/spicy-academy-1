@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function Headers() {
     return (
-        <div className='fixed bg-none flex w-full items-center h-[50px] align-middle justify-between px-[100px] py-[50px]'>
+        <div className='relative bg-none flex w-full items-center h-[50px] align-middle justify-between px-[100px] py-[50px]'>
             <Image className="h-[50px] w-[50px]"
                 src="/SGALOGO.svg"
                 width={50}
@@ -15,8 +15,8 @@ export default function Headers() {
             />
             <NavigationMenus  />
             <div className="bg-none z-99 font-[400] text-[14px] text-white gap-8 flex items-center ">
-            <a>Login</a>
-            <Button className="bg-brown h-[35px] w-[auto] rounded-2xl p-[15px] text-[14px] items-center justify-center"><Link href="/dashboard/admin/account">Join Now</Link></Button>
+            <Link href='/auth/login'>Login</Link>
+            <Button className="bg-brown h-[35px] w-[auto] rounded-2xl p-[15px] text-[14px] items-center justify-center"><Link href="/auth/signup">Join Now</Link></Button>
             </div>
         </div>
     )
